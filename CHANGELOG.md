@@ -35,6 +35,8 @@
 - **🎞️ Catch-up uses the hardware decoder again instead of falling back to software (#229)**
 - **📡 A catch-up of a programme still on air switches to live when the provider stops sending**
 - **⏱️ A short rewind on a catch-up channel no longer asks for a recording that doesn't exist yet**
+- **🔐 An Xtream playlist restored without its password fails with a login error instead of syncing empty**
+- **💾 A restore reports playlists left without the password they sync with**
 
 ## core-1.0.64 — 2026-10-04
 
