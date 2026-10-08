@@ -418,7 +418,10 @@ class XtreamClient(private val http: HttpClient) {
      * in [tz] (UTC by default — EPG timestamps are UTC; some panels expect server-local, hence the knob).
      */
     fun timeshiftUrl(s: SourceEntity, streamId: String, startMs: Long, durationMinutes: Int, tz: java.util.TimeZone = java.util.TimeZone.getTimeZone("UTC"), ext: String = "ts"): String {
-        val fmt = java.text.SimpleDateFormat("yyyy-MM-dd:HH-mm", java.util.Locale.US).apply { timeZone = tz }
+        // Reused, not rebuilt: SimpleDateFormat construction parses the pattern every time, and a
+        // shared instance is unsafe — it is not thread-safe — so one lives per thread. The timezone
+        // still comes from the call: it is the only part that varies.
+        val fmt = timeshiftFormat.get().apply { timeZone = tz }
         return "${base(s)}/timeshift/${s.username}/${s.password}/$durationMinutes/${fmt.format(java.util.Date(startMs))}/$streamId.$ext"
     }
     fun movieUrl(s: SourceEntity, streamId: String, ext: String?) =
@@ -814,6 +817,11 @@ class XtreamClient(private val http: HttpClient) {
         const val CATEGORY_MAX_ATTEMPTS = 3
         /** Enough of an HLS response to see `#EXTM3U` (or that an HTML error page came instead). */
         const val HLS_PROBE_BYTES = 512
+
+        /** One date formatter per thread for [timeshiftUrl]: building one parses the pattern anew. */
+        val timeshiftFormat = ThreadLocal.withInitial<java.text.SimpleDateFormat> {
+            java.text.SimpleDateFormat("yyyy-MM-dd:HH-mm", java.util.Locale.US)
+        }
     }
 
     private fun <T : Any> readLiveStreamAs(

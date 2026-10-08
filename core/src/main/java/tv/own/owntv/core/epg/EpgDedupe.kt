@@ -32,23 +32,47 @@ object EpgDedupe {
      */
     fun collapse(rows: List<EpgProgrammeEntity>): List<EpgProgrammeEntity> {
         if (rows.size < 2) return rows
-        val sorted = rows.sortedWith(compareBy({ it.startMs }, { it.stopMs }))
+        // The DAO already serves these in start order; skip the re-sort when it did. The check is
+        // one pass of Long comparisons, the sort it avoids is O(n log n) with full comparisons.
+        val sorted = if (isStartOrdered(rows)) rows else rows.sortedWith(compareBy({ it.startMs }, { it.stopMs }))
+        // Normalised once per row up front. The pairwise test used to normalise both titles on every
+        // comparison, so a 500-row channel paid ~1000 trims, lowercases and regex passes for what is
+        // 500 strings.
+        val keys = ArrayList<String>(sorted.size)
+        sorted.mapTo(keys) { normalise(it.title) }
         val kept = ArrayList<EpgProgrammeEntity>(sorted.size)
-        for (row in sorted) {
+        val keptKeys = ArrayList<String>(sorted.size)
+        for (i in sorted.indices) {
+            val row = sorted[i]
             val previous = kept.lastOrNull()
-            if (previous != null && isSameProgramme(previous, row)) {
+            if (previous != null && overlaps(previous, row) && keptKeys.last() == keys[i]) {
                 // Same programme, written twice. Keep whichever spans more of it.
                 if (row.durationMs > previous.durationMs) kept[kept.lastIndex] = row
                 continue
             }
             kept += row
+            keptKeys += keys[i]
         }
         return kept
     }
 
+    /** Start-then-stop order, the same order [collapse] sorts into. */
+    private fun isStartOrdered(rows: List<EpgProgrammeEntity>): Boolean {
+        for (i in 1 until rows.size) {
+            val p = rows[i - 1]
+            val c = rows[i]
+            if (c.startMs < p.startMs || (c.startMs == p.startMs && c.stopMs < p.stopMs)) return false
+        }
+        return true
+    }
+
+    /** Overlapping time: one half of the duplicate test, the title match is the other. */
+    private fun overlaps(a: EpgProgrammeEntity, b: EpgProgrammeEntity): Boolean =
+        a.startMs < b.stopMs && b.startMs < a.stopMs
+
     /** The same broadcast written down twice: one title, one stretch of time. */
     private fun isSameProgramme(a: EpgProgrammeEntity, b: EpgProgrammeEntity): Boolean =
-        a.startMs < b.stopMs && b.startMs < a.stopMs && normalise(a.title) == normalise(b.title)
+        overlaps(a, b) && normalise(a.title) == normalise(b.title)
 
     /**
      * Titles as two feeds write them: different case, padding, and runs of whitespace where one has

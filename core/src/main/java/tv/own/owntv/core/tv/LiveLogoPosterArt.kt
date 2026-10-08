@@ -191,9 +191,27 @@ class LiveLogoPosterArt(
         }
 
         /** One file per logo URL and card shape — 64 hex characters, which the provider checks. */
-        private fun key(source: Uri, aspectRatio: Int): String = MessageDigest.getInstance("SHA-256")
-            .digest("$aspectRatio|$source".toByteArray())
-            .joinToString("") { "%02x".format(it) }
+        private fun key(source: Uri, aspectRatio: Int): String {
+            // Reused digest, not a new one: getInstance does a provider lookup every call, and the
+            // "%02x" format it used to feed parses a format string per byte. One digest per thread
+            // (it keeps running state, so sharing one is unsafe) and a hex table instead.
+            val digest = sha256.get()
+            digest.reset()
+            val hashed = digest.digest("$aspectRatio|$source".toByteArray())
+            val out = CharArray(hashed.size * 2)
+            for (i in hashed.indices) {
+                val b = hashed[i].toInt() and 0xFF
+                out[i * 2] = HEX[b ushr 4]
+                out[i * 2 + 1] = HEX[b and 0x0F]
+            }
+            return String(out)
+        }
+
+        private val sha256 = ThreadLocal.withInitial<MessageDigest> {
+            MessageDigest.getInstance("SHA-256")
+        }
+
+        private const val HEX = "0123456789abcdef"
     }
 }
 
