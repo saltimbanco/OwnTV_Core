@@ -189,9 +189,19 @@ class RecordingEngine(
      * at 20:00 should still record the rest of the programme.
      */
     private suspend fun runRecording(id: Long, onProgress: (RecordingProgress) -> Unit) {
-        val row = recordingDao.getById(id) ?: return
-        val target = MediaTarget.of(context, row.filePath) ?: return
-        val startedAt = clock()
+        val stored = recordingDao.getById(id) ?: return
+        val target = MediaTarget.of(context, stored.filePath) ?: return
+        // When this recording began, decided **once** and then carried on the row itself.
+        //
+        // The row was read a line ago, before that moment had been written anywhere, so a row created
+        // without a start time still says null — and every progress write below reads
+        // `row.startedAt ?: now`. Left as it was, each of them stamped a fresh start time, and the
+        // REC badge (which counts from this, in both apps) read a recording that had been running for
+        // zero seconds every few seconds for as long as it lasted. Moving the copy forward here gives
+        // every one of them the real start, and a start that is persisted before a single byte is
+        // written is also what a reconnect finds waiting for it.
+        val startedAt = stored.startedAt ?: clock()
+        val row = if (stored.startedAt == null) stored.copy(startedAt = startedAt) else stored
         if (!canRecordInto(target)) {
             android.util.Log.w(TAG, "recording target unavailable id=$id path=${row.filePath}")
             finish(row, bytes = 0, failure = RecordingFailure.NO_SPACE, startedAt = startedAt)
