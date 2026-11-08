@@ -195,8 +195,9 @@
     <string name="settings_ch_paging">Fjernkontrollsnarveier</string>
     <string name="settings_ch_paging_description">Tilordne ledige knapper til navigasjon, avspilling og blaing. Viktige navigasjonsknapper forblir beskyttet.</string>
     <string name="settings_content_menus_title">Menyer ved langt trykk</string>
-    <string name="settings_content_menus_description">Endre rekkefølgen på handlingene i menyene for kanaler, filmer, serier og episoder</string>
-    <string name="settings_content_menus_hint">Hold inne OK på en handling for å plukke den opp, og flytt den så opp og ned. Trykk OK igjen for å slippe den.</string>
+    <string name="settings_content_menus_description">Endre rekkefølgen på eller skjul handlingene i menyene for kanaler, filmer, serier og episoder</string>
+    <string name="settings_content_menus_hint">Trykk OK på en handling for å vise eller skjule den. Hold inne OK for å plukke den opp, flytt den opp og ned, og trykk OK igjen for å slippe den.</string>
+    <string name="settings_content_menus_note">Noen handlinger vises bare der de passer.</string>
     <string name="settings_browsing_lists">Blaing og lister</string>
     <string name="settings_browsing_description">Husk den siste kategorien og det siste elementet i Direkte-TV, filmer og serier</string>
     <string name="settings_home_root">Startskjerm</string>
@@ -228,13 +229,17 @@
     <string name="settings_live_preview_description">Spill av en kanal automatisk når du fokuserer på den</string>
     <string name="settings_preview_audio">Lyd i forhåndsvisning</string>
     <string name="settings_preview_audio_description">Spill av lyd i direkteforhåndsvisningen</string>
+    <string name="settings_preview_on_ok">OK viser forhåndsvisning først</string>
+    <string name="settings_preview_on_ok_description">OK spiller kanalen i forhåndsvisningen, et nytt OK åpner den i fullskjerm</string>
     <string name="settings_mini_player_root">Miniavspiller</string>
     <string name="settings_mini_player_root_description">Størrelse og plassering for den forankrede miniavspilleren</string>
     <string name="settings_pip_on_leave">Bilde-i-bilde når du forlater appen</string>
     <string name="settings_pip_on_leave_description">Videoen fortsetter i et lite vindu når du trykker på Hjem</string>
     <string name="settings_prefer_sdr_description">Når en strøm har både et SDR- og et HDR-bilde, spilles SDR av: for en TV der HDR ser blek eller for mørk ut. En strøm med bare HDR forblir HDR. Bare ExoPlayer.</string>
-    <string name="settings_auto_frame_rate">Automatisk bildefrekvens</string>
-    <string name="settings_auto_frame_rate_description">Tilpass TV-ens oppdateringsfrekvens til videoen (24/25/50/60 bilder/s) i fullskjerm for Direkte-TV og VOD, og gjenopprett den når du avslutter. Slå av hvis TV-en eller mottakeren utfører et støyende HDMI-håndtrykk ved hvert kanalbytte.</string>
+    <string name="settings_auto_frame_rate_films">Automatisk bildefrekvens for filmer og serier</string>
+    <string name="settings_auto_frame_rate_films_description">Tilpass TV-ens oppdateringsfrekvens til filmen eller episoden (24/25/50/60 bilder/s) i fullskjerm, og gjenopprett den når du avslutter.</string>
+    <string name="settings_auto_frame_rate_live">Automatisk bildefrekvens for Direkte-TV</string>
+    <string name="settings_auto_frame_rate_live_description">Tilpass TV-ens oppdateringsfrekvens til kanalen (25/50/60 bilder/s) i fullskjerm, og gjenopprett den når du avslutter. Slå av hvis TV-en eller mottakeren utfører et støyende HDMI-håndtrykk ved hvert kanalbytte.</string>
     <string name="settings_afr_pause">Pause under skjermbytte</string>
     <string name="settings_afr_pause_description">Bare filmer. Når TV-en må synkronisere på nytt til en ny skjermmodus, venter filmen så lenge, slik at begynnelsen ikke går tapt i det svarte bildet. Et sømløst bytte pauser aldri.</string>
     <string name="settings_afr_resolution">Tilpass oppløsning</string>
@@ -277,6 +282,11 @@
     <string name="settings_check_updates_description">Hent den nyeste versjonen fra GitHub Releases</string>
     <string name="settings_update_startup">Se etter oppdateringer ved oppstart</string>
     <string name="settings_update_startup_description">Se etter en ny versjon når appen åpnes</string>
+    <string name="settings_auto_start_boot">Start automatisk ved påslag</string>
+    <string name="settings_auto_start_boot_description">Åpne OwnTV når TV-en slås på</string>
+    <string name="settings_auto_start_wake">Start automatisk ved oppvåkning</string>
+    <string name="settings_auto_start_wake_description">Åpne OwnTV når TV-en våkner fra hvilemodus</string>
+    <string name="settings_auto_start_needs_overlay">Krever «Vis over andre apper»</string>
     <string name="settings_about">Om</string>
     <string name="settings_live_latency">Direkteforsinkelse</string>
     <string name="settings_no_settings_match">Ingen innstillinger samsvarer med «<xliff:g id="query">%1$s</xliff:g>»</string>
@@ -386,6 +396,7 @@
     <string name="settings_search_keywords_startup">start åpne landingsside</string>
     <string name="settings_search_keywords_updates">GitHub utgivelse versjon</string>
     <string name="settings_search_keywords_update_auto">automatisk oppdatering ny versjon</string>
+    <string name="settings_search_keywords_auto_start">oppstart påslag oppvåkning hvilemodus standby automatisk åpne</string>
     <string name="settings_language_default">Standard (engelsk)</string>
     <string name="settings_language_device">Enhetsspråk</string>
     <string name="settings_language_arabic">Arabisk</string>
@@ -607,18 +618,33 @@
     <string name="settings_history_all">alle</string>
     <string name="settings_browsing_last_category">Husk siste kategori</string>
     <string name="settings_browsing_last_category_description">Åpne delen igjen i kategorien du forlot, ikke Alle.</string>
+    <string name="settings_guide_follows_live">Programoversikten følger Direkte-TV</string>
+    <string name="settings_guide_follows_live_description">Åpne programoversikten i samme kategori som Direkte-TV.</string>
+    <string name="settings_help_guide_follows_live">På: Programoversikten åpnes i kategorien Direkte-TV husker, og en kategori du velger i programoversikten, blir også kategorien til Direkte-TV. Av: Programoversikten har sin egen kategori.</string>
     <string name="settings_browsing_last_item">Husk siste element</string>
     <string name="settings_browsing_last_item_description">Hver kategori beholder sin egen rulleposisjon i stedet for å starte øverst. Direkte-TV gjenoppretter også den sist fokuserte kanalen.</string>
+    <string name="settings_browsing_live_categories">Direkte-TV-kategorier</string>
+    <string name="settings_browsing_live_categories_description">Vises i Direkte-TV, programoversikten, avspilleren og Multivisning. Med Alle kanaler slått av åpner Direkte-TV i den første kategorien din, eller i Favoritter hvis du ikke har noen.</string>
     <string name="settings_catchup_player">Spill av arkiv med</string>
     <string name="settings_customize_title">Tilpass kategorier og elementer</string>
     <string name="settings_customize_pin_locked">Denne skjermen er låst med PIN.</string>
     <string name="settings_customize_wrong_pin">Feil PIN – prøv igjen</string>
     <string name="settings_customize_enter_pin">Skriv inn PIN</string>
-    <string name="settings_customize_set_pin">🔒 Angi PIN</string>
-    <string name="settings_customize_change_pin">🔒 Endre PIN</string>
+    <string name="settings_customize_set_pin">🔒 Angi PIN for kategorilås</string>
+    <string name="settings_customize_change_pin">🔒 Endre PIN for kategorilås</string>
+    <string name="settings_customize_remove_pin">Fjern PIN for kategorilås</string>
     <string name="settings_customize_remove_lock">Fjern låsen</string>
-    <string name="settings_customize_settings_pin">Be om PIN for å åpne Innstillinger</string>
-    <string name="settings_customize_settings_pin_button">Be om PIN for å åpne Innstillinger: <xliff:g id="state">%1$s</xliff:g></string>
+    <string name="settings_lock">Innstillingslås</string>
+    <string name="settings_lock_description">Innstillinger, Sikkerhetskopiering og gjenoppretting og Lokal synkronisering ber om en egen PIN. Hver profil velger sin egen.</string>
+    <string name="settings_line_settings_lock">En egen PIN for Innstillinger</string>
+    <string name="settings_help_settings_lock">En PIN for denne profilen som Innstillinger, Sikkerhetskopiering og gjenoppretting og Lokal synkronisering ber om før de åpnes. Den er verken profil-PIN-en eller PIN-en for kategorilås: hver lås har sin egen PIN, og ingen av dem åpner en annen. Endre PIN og Slå av ber om gjeldende innstillings-PIN.</string>
+    <string name="settings_lock_menus">Lås også endringer i menyen for langt trykk</string>
+    <string name="settings_lock_menus_description">Skjul, Flytt, Gi nytt navn, låsing av en kategori og Fjern fra seerhistorikken ber også om innstillings-PIN-en. Favoritter og Spill av gjør aldri det.</string>
+    <string name="settings_line_settings_lock_menus">Endringer med langt trykk ber om innstillings-PIN-en</string>
+    <string name="settings_help_settings_lock_menus">Når dette er på, ber endringene med langt trykk (Skjul, Flytt, Gi nytt navn, Lås kategori og Fjern fra seerhistorikken) først om innstillings-PIN-en. Én riktig PIN åpner dem til du forlater appen eller bytter profil. Legg til i favoritter og avspilling ber aldri om den.</string>
+    <string name="settings_lock_change_pin">Endre PIN</string>
+    <string name="settings_lock_turn_off">Slå av</string>
+    <string name="settings_search_keywords_settings_lock">lås pin passord foreldre innstillinger</string>
     <string name="settings_customize_description">Skjul og vis kanaler, filmer og serier, og gi nytt navn til eller endre rekkefølgen på kategorier for denne profilen. Beholdes ved nye synkroniseringer.</string>
     <string name="settings_customize_new_category_behavior">Virkemåte for nye kategorier</string>
     <string name="settings_customize_hide">Skjul</string>
@@ -662,8 +688,7 @@
     <string name="settings_customize_restore_defaults_title">Gjenopprette <xliff:g id="section">%1$s</xliff:g> i <xliff:g id="playlist">%2$s</xliff:g>\?</string>
     <string name="settings_customize_restore_defaults_description">Skjulte kategorier og elementer vises igjen, nye navn og egendefinert rekkefølge fjernes, og flyttede elementer kommer tilbake. Kombinerte kategorier, favoritter og programoversikt-koblinger beholdes.</string>
     <string name="settings_customize_rename_hint">Bare for denne profilen. La feltet stå tomt for å gjenopprette «<xliff:g id="name">%1$s</xliff:g>».</string>
-    <string name="settings_customize_remove_pin_title">Fjerne PIN-låsen?</string>
-    <string name="settings_customize_remove_pin_message">Tilpasningsskjermen åpnes uten å be om PIN igjen.</string>
+    <string name="settings_customize_remove_pin_title">Fjerne PIN-koden for kategorilås?</string>
     <string name="settings_customize_remove_pin_locks">Alle kategorier som er låst med denne PIN-koden, låses også opp.</string>
     <string name="settings_customize_remove">Fjern</string>
     <string name="settings_customize_confirm_pin">Bekreft ny PIN</string>
@@ -715,6 +740,8 @@
     <string name="settings_sources_clean_names_custom">Fjern også</string>
     <string name="settings_sources_clean_names_custom_hint">Ord atskilt med ; f.eks. VIP; Backup</string>
     <string name="settings_sources_retest">Test på nytt</string>
+    <string name="settings_sources_ignore_limit">Ignorer tilkoblingsgrensen</string>
+    <string name="settings_sources_ignore_limit_on">Tilkoblingsgrensen ignoreres: Multivisning og opptak kan åpne flere strømmer enn denne spillelisten oppgir. En strøm leverandøren avviser, sier fortsatt ifra.</string>
     <string name="settings_sources_probe_title">Vil du teste denne spillelisten?</string>
     <string name="settings_sources_probe_warning">Mange leverandører sier aldri hvor mange kanaler du kan se samtidig, så OwnTV finner det ut ved å åpne noen og se hvilke som holder. Alt som spilles av nå, stopper, og dette kan ta opptil to minutter.</string>
     <string name="settings_sources_probe_running">Sjekker hvor mange kanaler denne leverandøren tillater… (<xliff:g id="current">%1$d</xliff:g> av <xliff:g id="total">%2$d</xliff:g>)</string>
@@ -825,7 +852,6 @@
     <string name="settings_backup_kids_profile">Barneprofil</string>
     <string name="settings_backup_profile_current">«<xliff:g id="name">%1$s</xliff:g>» (gjeldende)</string>
     <string name="settings_backup_profile_locked">«<xliff:g id="name">%1$s</xliff:g>» er låst</string>
-    <string name="settings_backup_profile_pin">Profilens PIN</string>
     <string name="settings_backup_pin_incorrect">Feil PIN.</string>
     <string name="settings_backup_pin_locked">Låst med PIN</string>
     <string name="settings_backup_unlock">Lås opp</string>
@@ -866,12 +892,22 @@
         <item quantity="other"><xliff:g id="count">%1$d</xliff:g> kilder ble hoppet over fordi spillelistetypene ikke støttes.</item>
     </plurals>
     <string name="settings_backup_export_error">Eksporteringen mislyktes.</string>
+    <string name="settings_backup_no_file_app">Ingen app på denne telefonen kan lagre filen. Bruk Del i stedet.</string>
     <string name="settings_backup_read_error">Kunne ikke lese sikkerhetskopifilen.</string>
     <string name="settings_backup_import_error">Importeringen mislyktes.</string>
     <string name="settings_backup_invalid_locale">Denne sikkerhetskopien inneholdt et appspråk som ikke støttes. Gjenopprettingen var vellykket, men det gjeldende språket ditt ble beholdt.</string>
     <string name="settings_backup_which_profiles">Hvilke profiler som skal sikkerhetskopieres</string>
     <string name="settings_backup_selected_profiles">Sikkerhetskopien vil bare inneholde de valgte profilene og dataene deres. Låste profiler krever PIN-koden sin.</string>
     <string name="settings_backup_profile_pin_description">Dette er ikke den gjeldende profilen din. Skriv inn profilens PIN for å ta den med i sikkerhetskopien – uten PIN-koden blir ikke dataene sikkerhetskopiert.</string>
+    <string name="settings_backup_profile_clash_title">«<xliff:g id="name">%1$s</xliff:g>» finnes allerede på denne enheten</string>
+    <string name="settings_backup_profile_clash_body">Sikkerhetskopien har en profil med samme navn. Hva skal skje med den?</string>
+    <string name="settings_backup_profile_merge">Slå sammen med den</string>
+    <string name="settings_backup_profile_merge_description">Beholder det den har her, og legger til det sikkerhetskopien har med.</string>
+    <string name="settings_backup_profile_replace">Erstatt den</string>
+    <string name="settings_backup_profile_replace_description">Favorittene, seerhistorikken, gjenopptakspunktene, tilpasningene og den manuelle rekkefølgen her tømmes først, for delene som gjenopprettes.</string>
+    <string name="settings_backup_profile_keep_both">Behold begge</string>
+    <string name="settings_backup_profile_keep_both_description">Profilen fra sikkerhetskopien kommer inn som en ny profil: «<xliff:g id="name">%1$s</xliff:g>».</string>
+    <string name="settings_backup_profile_restored_name"><xliff:g id="name">%1$s</xliff:g> (gjenopprettet)</string>
     <string name="settings_metadata_optional">valgfritt</string>
     <string name="settings_metadata_test_title">Oppenheimer</string>
     <string name="settings_bulk_rename_title">Endre flere navn</string>
@@ -1213,6 +1249,32 @@
     <string name="local_sync_last_synced">Sist synkronisert: <xliff:g id="when">%1$s</xliff:g></string>
     <string name="local_sync_already_paired">Allerede sammenkoblet</string>
     <string name="local_sync_device_with_code"><xliff:g id="name">%1$s</xliff:g> (<xliff:g id="code">%2$s</xliff:g>)</string>
+    <string name="local_sync_profile_note">Bare profilen som er i bruk, synkroniseres: <xliff:g id="profile">%1$s</xliff:g> her, med profilen som er i bruk på den andre enheten.</string>
+    <string name="local_auto_sync_title">Automatisk synkronisering</string>
+    <string name="local_auto_sync_for_device">Hva denne enheten synkroniserer selv med <xliff:g id="device">%1$s</xliff:g>, og hvor ofte.</string>
+    <string name="local_auto_sync_enable">Automatisk synkronisering med denne enheten</string>
+    <string name="local_auto_sync_enable_hint">Åpne Lokal synkronisering på den andre enheten også: den blir spurt om å tillate det.</string>
+    <string name="local_auto_sync_waiting">Venter på at <xliff:g id="device">%1$s</xliff:g> skal tillate det …</string>
+    <string name="local_auto_sync_declined"><xliff:g id="device">%1$s</xliff:g> tillot ikke automatisk synkronisering.</string>
+    <string name="local_auto_sync_accept_title">Tillate automatisk synkronisering?</string>
+    <string name="local_auto_sync_accept_body"><xliff:g id="device">%1$s</xliff:g> vil synkronisere selv med denne enheten når OwnTV er åpen på begge. Bare det du tillater på denne enheten, kommer inn, og hvilken som helst av dem kan slå det av.</string>
+    <string name="local_auto_sync_accept">Tillat</string>
+    <string name="local_auto_sync_decline">Ikke tillat</string>
+    <string name="local_auto_sync_what_to_sync">Hva denne enheten synkroniserer</string>
+    <string name="local_auto_sync_when">Hvor ofte</string>
+    <string name="local_auto_sync_timing_immediately">Hver gang en av appene åpnes eller lukkes</string>
+    <string name="local_auto_sync_timing_daily">Daglig</string>
+    <string name="local_auto_sync_timing_weekly">Ukentlig</string>
+    <string name="local_auto_sync_note">Automatisk synkronisering slår sammen begge veier, og det som er slettet, forblir slettet. Hver enhet bestemmer hva den slipper gjennom: spillelister med pålogging og Innstillinger går bare dit de er krysset av.</string>
+    <string name="local_auto_sync_last_run">Siste automatiske synkronisering: <xliff:g id="when">%1$s</xliff:g></string>
+    <string name="local_auto_sync_their_sections"><xliff:g id="device">%1$s</xliff:g> synkroniserer: <xliff:g id="sections">%2$s</xliff:g></string>
+    <string name="local_auto_sync_profiles">Profiler: <xliff:g id="here">%1$s</xliff:g> ↔ <xliff:g id="there">%2$s</xliff:g></string>
+    <string name="local_auto_sync_profile_hint">Parer denne profilen, <xliff:g id="profile">%1$s</xliff:g>, med profilen som brukes på <xliff:g id="device">%2$s</xliff:g>.</string>
+    <string name="local_auto_sync_turned_off">Automatisk synkronisering slått av på <xliff:g id="device">%1$s</xliff:g></string>
+    <string name="local_auto_sync_unreachable">Fikk ikke kontakt med <xliff:g id="device">%1$s</xliff:g>, prøver igjen</string>
+    <string name="local_auto_sync_listen">Lytt etter automatisk synkronisering</string>
+    <string name="local_auto_sync_listen_description">På: parede enheter kan synkronisere med denne når OwnTV er åpen her. Av: bare mens synkroniseringsmodus er på.</string>
+    <string name="local_auto_sync_listening">Lytter</string>
     <string name="more_pane_last_backup">Siste sikkerhetskopi</string>
     <string name="more_pane_encrypted">Kryptert</string>
     <string name="more_group_your_things">Dine ting</string>
@@ -1398,7 +1460,7 @@
     <string name="settings_line_guide_width">Kanalliste og tidslinje</string>
     <string name="settings_line_browsing">Husk siste kategori og element</string>
     <string name="settings_line_home">Velg, sorter og filtrer radene</string>
-    <string name="settings_line_content_menus">Omorganiser handlingene i hver meny</string>
+    <string name="settings_line_content_menus">Omorganiser eller skjul handlingene i hver meny</string>
     <string name="settings_line_remote_shortcuts">Tilordne ledige knapper på fjernkontrollen</string>
     <string name="settings_line_customize">Skjul og vis, gi nytt navn og sorter</string>
     <string name="settings_line_metadata">Plakater, handling, rolleliste og vurderinger for filmer og serier</string>
@@ -1411,6 +1473,7 @@
     <string name="settings_line_dns">En egendefinert DNS-server</string>
     <string name="settings_line_quick_live_preview">Spill av den valgte kanalen i direkte-TV</string>
     <string name="settings_line_preview_sound">Lyd i direkteforhåndsvisningen</string>
+    <string name="settings_line_preview_on_ok">Først forhåndsvisning, så fullskjerm</string>
     <string name="settings_line_quick_channel_numbers">Tast et nummer på fjernkontrollen for å bytte</string>
     <string name="settings_line_prefer_sdr">SDR når en strøm har begge</string>
     <string name="settings_line_quick_autoplay">Start neste episode av seg selv</string>
@@ -1491,6 +1554,8 @@
     <string name="settings_help_startup">Hva OwnTV viser ved oppstart: Hjem, kanalen du så sist, favorittene dine eller en kanal du velger.</string>
     <string name="settings_help_check_updates">Ser etter en nyere OwnTV på GitHub nå og tilbyr å installere den. Spillelistene, favorittene og innstillingene dine forblir som de er.</string>
     <string name="settings_help_update_startup">Ser etter en ny versjon hver gang OwnTV starter, og sier fra når det finnes en. Ingenting installeres uten å spørre.</string>
+    <string name="settings_help_auto_start_boot">Åpner OwnTV av seg selv når TV-en har startet, på skjermen som er valgt i Oppstart av appen. Android lar bare en app åpne seg selv hvis den får vises over andre apper, så når du slår på dette, åpnes skjermen for den tillatelsen. Noen TV-er tilbyr den ikke, og der kan automatisk start ikke fungere.</string>
+    <string name="settings_help_auto_start_wake">Åpner OwnTV hver gang TV-en våkner fra hvilemodus, også når du vekket den for en annen app. Hvis Oppstart av appen åpner en kanal, starter hver oppvåkning den strømmen. Så lenge dette er på, holder OwnTV en liten bakgrunnstjeneste i gang med et lydløst varsel. Som automatisk start ved påslag trenger den tillatelse til å vises over andre apper.</string>
     <string name="settings_help_dns">Slår opp leverandørens adresser med en DNS-server du velger i stedet for nettverkets egen — nyttig når nettverket blokkerer eller omdirigerer dem.</string>
     <string name="settings_help_live_engine">ExoPlayer åpner kanaler mye raskere og er den eneste med direkteteksting. mpv spiller kanaler ExoPlayer ikke klarer, også noe uvanlig lyd. De kombinerte valgene prøver den andre spilleren når den første mislykkes.</string>
     <string name="settings_help_hw">Bruker TV-ens maskinvaredekoder: jevn 4K og mindre varme. Slå den bare av hvis noen strømmer hakker eller viser blokker; da gjør programvaredekoderen jobben.</string>
@@ -1501,6 +1566,7 @@
     <string name="settings_help_sub_lang">Undertekster på dette språket slås på av seg selv når strømmen har dem. Ellers forblir de av til du velger et spor i spilleren.</string>
     <string name="settings_help_live_preview">Den valgte kanalen spilles i forhåndsvisningen ved siden av direkte-TV-listen, så du ser hva som går før du åpner den. Krever et oppsett med plass til forhåndsvisningen.</string>
     <string name="settings_help_preview_audio">Spiller forhåndsvisningens lyd i tillegg til bildet. Av holder blaingen stille.</string>
+    <string name="settings_help_preview_on_ok">Velg hvor OK på en kanal først spiller den i forhåndsvisningen, og et nytt OK på samme kanal åpner den i fullskjerm. I direkte-TV blir forhåndsvisningen da stående på den kanalen mens du blar. Der det er av, åpner OK kanalen i fullskjerm med en gang, og forhåndsvisningen følger markeringen.</string>
     <string name="settings_help_timeshift_window">Hvor langt tilbake Sett direkte-TV på pause og spol tilbake kan gå på en kanal uten catch-up. Lengre beholder mer av kanalen på enhetens lagring.</string>
     <string name="settings_help_resume">Spør om å fortsette tilbyr Fortsett eller Start på nytt når en film eller episode har en lagret posisjon. Fortsett alltid går videre der du slapp; Fortsett aldri starter fra begynnelsen.</string>
     <string name="settings_help_mini">Den lille spilleren som holder en kanal i gang i et hjørne mens du blar. Velg størrelse og hjørne.</string>
@@ -1587,6 +1653,8 @@
     <string name="settings_remote_scan">Skann eller åpne i en nettleser</string>
     <string name="settings_remote_or_open">eller åpne</string>
     <string name="settings_remote_details_note">Opplysningene vises her; du starter importen med fjernkontrollen.</string>
+    <string name="settings_remote_edit_note">Endringene fyller redigeringsskjermen; du trykker på Lagre med fjernkontrollen.</string>
+    <string name="settings_help_edit_from_phone">Åpner denne spillelisten i en nettleser på en telefon, et nettbrett eller en datamaskin på samme wifi. Passord, MAC-adresser og adresser til M3U-spillelister vises aldri der: la dem stå tomme for å beholde dem. Det du sender, fyller denne skjermen, og ingenting endres før du trykker på Lagre.</string>
     <string name="settings_key_stop_back">Stopp og gå tilbake</string>
     <string name="settings_source_type">Type</string>
     <string name="settings_line_source_type">Xtream, M3U eller Stalker-portal</string>

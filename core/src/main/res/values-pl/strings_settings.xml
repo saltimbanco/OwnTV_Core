@@ -197,8 +197,9 @@
     <string name="settings_ch_paging">Skróty pilota</string>
     <string name="settings_ch_paging_description">Przypisz wolne przyciski pilota do nawigacji, odtwarzania i przeglądania. Podstawowe przyciski pozostają chronione.</string>
     <string name="settings_content_menus_title">Menu długiego naciśnięcia</string>
-    <string name="settings_content_menus_description">Zmień kolejność akcji w menu kanałów, filmów, seriali i odcinków</string>
-    <string name="settings_content_menus_hint">Przytrzymaj OK na akcji, aby ją chwycić, a potem przesuwaj w górę i w dół. Ponowne OK ją upuszcza.</string>
+    <string name="settings_content_menus_description">Zmień kolejność akcji w menu kanałów, filmów, seriali i odcinków lub je ukryj</string>
+    <string name="settings_content_menus_hint">Naciśnij OK na akcji, aby ją pokazać lub ukryć. Przytrzymaj OK, aby ją chwycić, przesuwaj w górę i w dół, a ponowne OK ją upuszcza.</string>
+    <string name="settings_content_menus_note">Niektóre akcje pojawiają się tylko tam, gdzie mają zastosowanie.</string>
     <string name="settings_browsing_lists">Przeglądanie i listy</string>
     <string name="settings_browsing_description">Zapamiętuj ostatnią kategorię i ostatni element w telewizji na żywo, filmach i serialach</string>
     <string name="settings_home_root">Ekran główny</string>
@@ -230,13 +231,17 @@
     <string name="settings_live_preview_description">Automatycznie odtwarzaj kanał po jego zaznaczeniu</string>
     <string name="settings_preview_audio">Dźwięk podglądu</string>
     <string name="settings_preview_audio_description">Odtwarzaj dźwięk w podglądzie na żywo</string>
+    <string name="settings_preview_on_ok">OK najpierw pokazuje podgląd</string>
+    <string name="settings_preview_on_ok_description">OK odtwarza kanał w podglądzie, kolejne OK otwiera go na pełnym ekranie</string>
     <string name="settings_mini_player_root">Miniodtwarzacz</string>
     <string name="settings_mini_player_root_description">Rozmiar i położenie zadokowanego miniodtwarzacza</string>
     <string name="settings_pip_on_leave">Obraz w obrazie po wyjściu z aplikacji</string>
     <string name="settings_pip_on_leave_description">Wideo gra dalej w małym oknie po naciśnięciu przycisku ekranu głównego</string>
     <string name="settings_prefer_sdr_description">Gdy strumień oferuje obraz SDR i HDR, odtwarzany jest SDR: dla telewizora, na którym HDR wygląda na wyblakły lub zbyt ciemny. Strumień tylko z HDR pozostaje w HDR. Tylko ExoPlayer.</string>
-    <string name="settings_auto_frame_rate">Automatyczne dopasowanie klatek</string>
-    <string name="settings_auto_frame_rate_description">Dopasuj częstotliwość odświeżania telewizora do filmu (24/25/50/60 kl./s) na pełnym ekranie w telewizji na żywo i VOD, a po zakończeniu przywróć poprzednią wartość. Wyłącz tę opcję, jeśli telewizor lub amplituner głośno ponawia uzgadnianie połączenia HDMI przy każdej zmianie kanału.</string>
+    <string name="settings_auto_frame_rate_films">Automatyczne dopasowanie klatek dla filmów i seriali</string>
+    <string name="settings_auto_frame_rate_films_description">Dopasuj częstotliwość odświeżania telewizora do filmu lub odcinka (24/25/50/60 kl./s) na pełnym ekranie, a po zakończeniu przywróć poprzednią wartość.</string>
+    <string name="settings_auto_frame_rate_live">Automatyczne dopasowanie klatek dla telewizji na żywo</string>
+    <string name="settings_auto_frame_rate_live_description">Dopasuj częstotliwość odświeżania telewizora do kanału (25/50/60 kl./s) na pełnym ekranie, a po zakończeniu przywróć poprzednią wartość. Wyłącz tę opcję, jeśli telewizor lub amplituner głośno ponawia uzgadnianie połączenia HDMI przy każdej zmianie kanału.</string>
     <string name="settings_afr_pause">Pauza podczas przełączania ekranu</string>
     <string name="settings_afr_pause_description">Tylko filmy. Gdy telewizor musi ponownie zsynchronizować się z nowym trybem ekranu, film czeka tyle czasu, aby jego początek nie przepadł w czarnym obrazie. Płynne przełączenie nigdy nie wstrzymuje.</string>
     <string name="settings_afr_resolution">Dopasuj rozdzielczość</string>
@@ -281,6 +286,11 @@
     <string name="settings_check_updates_description">Pobierz najnowszą wersję z GitHub Releases</string>
     <string name="settings_update_startup">Sprawdzaj aktualizacje przy uruchamianiu</string>
     <string name="settings_update_startup_description">Szukaj nowej wersji po otwarciu aplikacji</string>
+    <string name="settings_auto_start_boot">Autostart po włączeniu</string>
+    <string name="settings_auto_start_boot_description">Otwieraj OwnTV po włączeniu telewizora</string>
+    <string name="settings_auto_start_wake">Autostart po wybudzeniu</string>
+    <string name="settings_auto_start_wake_description">Otwieraj OwnTV, gdy telewizor wybudza się z uśpienia</string>
+    <string name="settings_auto_start_needs_overlay">Wymaga „Wyświetlanie nad innymi aplikacjami”</string>
     <string name="settings_about">O aplikacji</string>
     <string name="settings_live_latency">Opóźnienie transmisji na żywo</string>
     <string name="settings_no_settings_match">Brak ustawień pasujących do „<xliff:g id="query">%1$s</xliff:g>”</string>
@@ -390,6 +400,7 @@
     <string name="settings_search_keywords_startup">uruchom otwórz ekran początkowy</string>
     <string name="settings_search_keywords_updates">github wydanie wersja</string>
     <string name="settings_search_keywords_update_auto">automatyczna aktualizacja nowa wersja</string>
+    <string name="settings_search_keywords_auto_start">uruchamianie włączanie wybudzenie uśpienie czuwanie autostart otwieranie</string>
     <string name="settings_language_default">Domyślny (angielski)</string>
     <string name="settings_language_device">Język urządzenia</string>
     <string name="settings_language_arabic">Arabski</string>
@@ -613,18 +624,33 @@
     <string name="settings_history_all">wszystkie</string>
     <string name="settings_browsing_last_category">Zapamiętuj ostatnią kategorię</string>
     <string name="settings_browsing_last_category_description">Po ponownym otwarciu sekcji wracaj do opuszczonej kategorii zamiast do kategorii Wszystkie.</string>
+    <string name="settings_guide_follows_live">Przewodnik TV podąża za telewizją na żywo</string>
+    <string name="settings_guide_follows_live_description">Otwieraj Przewodnik TV w kategorii telewizji na żywo.</string>
+    <string name="settings_help_guide_follows_live">Włączone: Przewodnik TV otwiera się w kategorii zapamiętanej przez telewizję na żywo, a kategoria wybrana w Przewodniku TV staje się też kategorią telewizji na żywo. Wyłączone: Przewodnik TV ma własną kategorię.</string>
     <string name="settings_browsing_last_item">Zapamiętuj ostatni element</string>
     <string name="settings_browsing_last_item_description">Każda kategoria zachowuje własną pozycję przewijania zamiast wracać na początek. Telewizja na żywo przywraca również ostatnio zaznaczony kanał.</string>
+    <string name="settings_browsing_live_categories">Kategorie telewizji na żywo</string>
+    <string name="settings_browsing_live_categories_description">Widoczne w telewizji na żywo, przewodniku TV, odtwarzaczu i Multiview. Gdy Wszystkie kanały są wyłączone, telewizja na żywo otwiera się na pierwszej kategorii, a jeśli żadnej nie masz — na Ulubionych.</string>
     <string name="settings_catchup_player">Odtwarzaj materiały z telewizji wstecz w</string>
     <string name="settings_customize_title">Personalizuj kategorie i elementy</string>
     <string name="settings_customize_pin_locked">Ten ekran jest zablokowany kodem PIN.</string>
     <string name="settings_customize_wrong_pin">Nieprawidłowy PIN — spróbuj ponownie</string>
     <string name="settings_customize_enter_pin">Wprowadź PIN</string>
-    <string name="settings_customize_set_pin">🔒 Ustaw PIN</string>
-    <string name="settings_customize_change_pin">🔒 Zmień PIN</string>
+    <string name="settings_customize_set_pin">🔒 Ustaw PIN blokady kategorii</string>
+    <string name="settings_customize_change_pin">🔒 Zmień PIN blokady kategorii</string>
+    <string name="settings_customize_remove_pin">Usuń PIN blokady kategorii</string>
     <string name="settings_customize_remove_lock">Usuń blokadę</string>
-    <string name="settings_customize_settings_pin">Pytaj o PIN przy otwieraniu Ustawień</string>
-    <string name="settings_customize_settings_pin_button">Pytaj o PIN przy otwieraniu Ustawień: <xliff:g id="state">%1$s</xliff:g></string>
+    <string name="settings_lock">Blokada ustawień</string>
+    <string name="settings_lock_description">Ustawienia, Kopia zapasowa i przywracanie oraz Synchronizacja lokalna proszą o własny PIN. Każdy profil ustawia swój.</string>
+    <string name="settings_line_settings_lock">Własny PIN dla Ustawień</string>
+    <string name="settings_help_settings_lock">PIN tego profilu, o który Ustawienia, Kopia zapasowa i przywracanie oraz Synchronizacja lokalna proszą przed otwarciem. To nie jest PIN profilu ani PIN blokady kategorii: każda blokada ma własny PIN i żadna nie otwiera innej. Zmień PIN i Wyłącz proszą o obecny PIN ustawień.</string>
+    <string name="settings_lock_menus">Blokuj też zmiany z menu długiego naciśnięcia</string>
+    <string name="settings_lock_menus_description">Ukryj, Przenieś, Zmień nazwę, blokowanie kategorii i Usuń z historii również proszą o PIN ustawień. Ulubione i Odtwórz nigdy.</string>
+    <string name="settings_line_settings_lock_menus">Zmiany długim naciśnięciem proszą o PIN ustawień</string>
+    <string name="settings_help_settings_lock_menus">Gdy to jest włączone, zmiany długim naciśnięciem (Ukryj, Przenieś, Zmień nazwę, Zablokuj kategorię i Usuń z historii) najpierw proszą o PIN ustawień. Jeden poprawny PIN odblokowuje je do wyjścia z aplikacji lub zmiany profilu. Dodawanie do ulubionych i odtwarzanie nigdy o niego nie proszą.</string>
+    <string name="settings_lock_change_pin">Zmień PIN</string>
+    <string name="settings_lock_turn_off">Wyłącz</string>
+    <string name="settings_search_keywords_settings_lock">blokada pin hasło rodzicielska ustawienia</string>
     <string name="settings_customize_description">Ukrywaj i pokazuj kanały, filmy oraz seriale, a także zmieniaj nazwy i kolejność kategorii w tym profilu. Ustawienia pozostają zachowane po ponownej synchronizacji.</string>
     <string name="settings_customize_new_category_behavior">Sposób obsługi nowych kategorii</string>
     <string name="settings_customize_hide">Ukryj</string>
@@ -670,8 +696,7 @@
     <string name="settings_customize_restore_defaults_title">Przywrócić <xliff:g id="section">%1$s</xliff:g> w <xliff:g id="playlist">%2$s</xliff:g>\?</string>
     <string name="settings_customize_restore_defaults_description">Ukryte kategorie i elementy znów będą widoczne, zmienione nazwy i własna kolejność zostaną usunięte, a przeniesione elementy wrócą. Połączone kategorie, ulubione i dopasowania przewodnika zostaną zachowane.</string>
     <string name="settings_customize_rename_hint">Tylko w tym profilu. Pozostaw puste, aby przywrócić „<xliff:g id="name">%1$s</xliff:g>”.</string>
-    <string name="settings_customize_remove_pin_title">Usunąć blokadę PIN?</string>
-    <string name="settings_customize_remove_pin_message">Ekran personalizacji będzie odtąd otwierany bez pytania o PIN.</string>
+    <string name="settings_customize_remove_pin_title">Usunąć PIN blokady kategorii?</string>
     <string name="settings_customize_remove_pin_locks">Wszystkie kategorie zablokowane tym PIN-em również zostaną odblokowane.</string>
     <string name="settings_customize_remove">Usuń</string>
     <string name="settings_customize_confirm_pin">Potwierdź nowy PIN</string>
@@ -725,6 +750,8 @@
     <string name="settings_sources_clean_names_custom">Usuń też</string>
     <string name="settings_sources_clean_names_custom_hint">Słowa oddzielone ; np. VIP; Backup</string>
     <string name="settings_sources_retest">Testuj ponownie</string>
+    <string name="settings_sources_ignore_limit">Ignoruj limit połączeń</string>
+    <string name="settings_sources_ignore_limit_on">Limit połączeń jest ignorowany: Multiview i nagrania mogą otworzyć więcej strumieni, niż podaje ta playlista. Strumień odrzucony przez dostawcę nadal to zgłosi.</string>
     <string name="settings_sources_probe_title">Przetestować tę playlistę?</string>
     <string name="settings_sources_probe_warning">Wielu dostawców nigdy nie podaje, ile kanałów można oglądać jednocześnie, więc OwnTV sprawdza to, otwierając kilka i obserwując, które przetrwają. Wszystko, co jest teraz odtwarzane, zostanie zatrzymane, a może to potrwać do dwóch minut.</string>
     <string name="settings_sources_probe_running">Sprawdzanie, ile kanałów dopuszcza ten dostawca… (<xliff:g id="current">%1$d</xliff:g> z <xliff:g id="total">%2$d</xliff:g>)</string>
@@ -845,7 +872,6 @@
     <string name="settings_backup_kids_profile">Profil dziecięcy</string>
     <string name="settings_backup_profile_current">„<xliff:g id="name">%1$s</xliff:g>” (bieżący)</string>
     <string name="settings_backup_profile_locked">Profil „<xliff:g id="name">%1$s</xliff:g>” jest zablokowany</string>
-    <string name="settings_backup_profile_pin">PIN profilu</string>
     <string name="settings_backup_pin_incorrect">Nieprawidłowy PIN.</string>
     <string name="settings_backup_pin_locked">Zablokowano kodem PIN</string>
     <string name="settings_backup_unlock">Odblokuj</string>
@@ -890,12 +916,22 @@
         <item quantity="other">Pominięto <xliff:g id="count">%1$d</xliff:g> źródeł, ponieważ typy ich list odtwarzania nie są obsługiwane.</item>
     </plurals>
     <string name="settings_backup_export_error">Eksport nie powiódł się.</string>
+    <string name="settings_backup_no_file_app">Żadna aplikacja na tym telefonie nie może zapisać pliku. Użyj opcji Udostępnij.</string>
     <string name="settings_backup_read_error">Nie udało się odczytać pliku kopii zapasowej.</string>
     <string name="settings_backup_import_error">Import nie powiódł się.</string>
     <string name="settings_backup_invalid_locale">Ta kopia zapasowa zawierała nieobsługiwany język aplikacji. Przywracanie zakończyło się pomyślnie, ale zachowano bieżący język.</string>
     <string name="settings_backup_which_profiles">Wybór profili do kopii zapasowej</string>
     <string name="settings_backup_selected_profiles">Kopia zapasowa będzie zawierać wyłącznie dane wybranych profili. Dostęp do zablokowanych profili wymaga podania kodu PIN.</string>
     <string name="settings_backup_profile_pin_description">To nie jest Twój bieżący profil. Wprowadź jego PIN, aby uwzględnić go w kopii zapasowej — bez kodu PIN jego dane nie zostaną zapisane.</string>
+    <string name="settings_backup_profile_clash_title">„<xliff:g id="name">%1$s</xliff:g>” jest już na tym urządzeniu</string>
+    <string name="settings_backup_profile_clash_body">Kopia zapasowa ma profil o tej samej nazwie. Co z nim zrobić?</string>
+    <string name="settings_backup_profile_merge">Scal z nim</string>
+    <string name="settings_backup_profile_merge_description">Zachowuje to, co ma tutaj, i dodaje to, co wnosi kopia.</string>
+    <string name="settings_backup_profile_replace">Zastąp go</string>
+    <string name="settings_backup_profile_replace_description">Jego ulubione, historia, miejsca wznowienia, dostosowania i ręczna kolejność tutaj są najpierw czyszczone dla przywracanych części.</string>
+    <string name="settings_backup_profile_keep_both">Zachowaj oba</string>
+    <string name="settings_backup_profile_keep_both_description">Profil z kopii zostanie dodany jako nowy profil: „<xliff:g id="name">%1$s</xliff:g>”.</string>
+    <string name="settings_backup_profile_restored_name"><xliff:g id="name">%1$s</xliff:g> (przywrócony)</string>
     <string name="settings_metadata_optional">opcjonalnie</string>
     <string name="settings_metadata_test_title">Oppenheimer</string>
     <string name="settings_bulk_rename_title">Zbiorcza zmiana nazw</string>
@@ -1255,6 +1291,32 @@
     <string name="local_sync_last_synced">Ostatnia synchronizacja: <xliff:g id="when">%1$s</xliff:g></string>
     <string name="local_sync_already_paired">Już sparowane</string>
     <string name="local_sync_device_with_code"><xliff:g id="name">%1$s</xliff:g> (<xliff:g id="code">%2$s</xliff:g>)</string>
+    <string name="local_sync_profile_note">Synchronizuje się tylko używany profil: <xliff:g id="profile">%1$s</xliff:g> tutaj, z profilem używanym na drugim urządzeniu.</string>
+    <string name="local_auto_sync_title">Automatyczna synchronizacja</string>
+    <string name="local_auto_sync_for_device">Co to urządzenie samo synchronizuje z <xliff:g id="device">%1$s</xliff:g> i jak często.</string>
+    <string name="local_auto_sync_enable">Automatyczna synchronizacja z tym urządzeniem</string>
+    <string name="local_auto_sync_enable_hint">Otwórz Synchronizację lokalną także na drugim urządzeniu: zostanie poproszone o zgodę.</string>
+    <string name="local_auto_sync_waiting">Oczekiwanie na zgodę <xliff:g id="device">%1$s</xliff:g>…</string>
+    <string name="local_auto_sync_declined"><xliff:g id="device">%1$s</xliff:g> nie zezwoliło na automatyczną synchronizację.</string>
+    <string name="local_auto_sync_accept_title">Zezwolić na automatyczną synchronizację?</string>
+    <string name="local_auto_sync_accept_body"><xliff:g id="device">%1$s</xliff:g> chce samo synchronizować się z tym urządzeniem, gdy OwnTV jest otwarte na obu. Przychodzi tylko to, na co zezwolisz na tym urządzeniu, a każde z nich może to wyłączyć.</string>
+    <string name="local_auto_sync_accept">Zezwól</string>
+    <string name="local_auto_sync_decline">Nie zezwalaj</string>
+    <string name="local_auto_sync_what_to_sync">Co synchronizuje to urządzenie</string>
+    <string name="local_auto_sync_when">Jak często</string>
+    <string name="local_auto_sync_timing_immediately">Przy każdym otwarciu lub zamknięciu jednej z aplikacji</string>
+    <string name="local_auto_sync_timing_daily">Codziennie</string>
+    <string name="local_auto_sync_timing_weekly">Co tydzień</string>
+    <string name="local_auto_sync_note">Automatyczna synchronizacja scala w obie strony, a usunięte pozostaje usunięte. Każde urządzenie decyduje, co przepuszcza: playlisty z danymi logowania i Ustawienia trafiają tylko tam, gdzie są zaznaczone.</string>
+    <string name="local_auto_sync_last_run">Ostatnia automatyczna synchronizacja: <xliff:g id="when">%1$s</xliff:g></string>
+    <string name="local_auto_sync_their_sections"><xliff:g id="device">%1$s</xliff:g> synchronizuje: <xliff:g id="sections">%2$s</xliff:g></string>
+    <string name="local_auto_sync_profiles">Profile: <xliff:g id="here">%1$s</xliff:g> ↔ <xliff:g id="there">%2$s</xliff:g></string>
+    <string name="local_auto_sync_profile_hint">Łączy ten profil, <xliff:g id="profile">%1$s</xliff:g>, z profilem używanym na <xliff:g id="device">%2$s</xliff:g>.</string>
+    <string name="local_auto_sync_turned_off">Automatyczna synchronizacja wyłączona na <xliff:g id="device">%1$s</xliff:g></string>
+    <string name="local_auto_sync_unreachable">Nie można połączyć się z <xliff:g id="device">%1$s</xliff:g>, ponowna próba później</string>
+    <string name="local_auto_sync_listen">Nasłuchuj automatycznej synchronizacji</string>
+    <string name="local_auto_sync_listen_description">Wł.: sparowane urządzenia mogą synchronizować się z tym, gdy OwnTV jest tu otwarte. Wył.: tylko gdy tryb synchronizacji jest włączony.</string>
+    <string name="local_auto_sync_listening">Nasłuchuje</string>
     <string name="more_pane_last_backup">Ostatnia kopia zapasowa</string>
     <string name="more_pane_encrypted">Zaszyfrowana</string>
     <string name="more_group_your_things">Twoje rzeczy</string>
@@ -1454,7 +1516,7 @@
     <string name="settings_line_guide_width">Lista kanałów i oś czasu</string>
     <string name="settings_line_browsing">Zapamiętaj ostatnią kategorię i pozycję</string>
     <string name="settings_line_home">Wybierz, uporządkuj i filtruj rzędy</string>
-    <string name="settings_line_content_menus">Zmień układ działań w każdym menu</string>
+    <string name="settings_line_content_menus">Zmień układ działań w każdym menu lub je ukryj</string>
     <string name="settings_line_remote_shortcuts">Przypisz wolne przyciski pilota</string>
     <string name="settings_line_customize">Ukrywaj i pokazuj, zmieniaj nazwy i kolejność</string>
     <string name="settings_line_metadata">Plakaty, fabuła, obsada i oceny filmów i seriali</string>
@@ -1467,6 +1529,7 @@
     <string name="settings_line_dns">Własny serwer DNS</string>
     <string name="settings_line_quick_live_preview">Odtwarzaj zaznaczony kanał w TV na żywo</string>
     <string name="settings_line_preview_sound">Dźwięk w podglądzie na żywo</string>
+    <string name="settings_line_preview_on_ok">Najpierw podgląd, potem pełny ekran</string>
     <string name="settings_line_quick_channel_numbers">Wpisz numer na pilocie, aby przełączyć</string>
     <string name="settings_line_prefer_sdr">SDR, gdy strumień oferuje oba</string>
     <string name="settings_line_quick_autoplay">Następny odcinek uruchamia się sam</string>
@@ -1547,6 +1610,8 @@
     <string name="settings_help_startup">Co OwnTV pokazuje po uruchomieniu: stronę główną, ostatnio oglądany kanał, ulubione lub wybrany kanał.</string>
     <string name="settings_help_check_updates">Sprawdza teraz na GitHubie, czy jest nowsza wersja OwnTV, i proponuje instalację. Playlisty, ulubione i ustawienia pozostają bez zmian.</string>
     <string name="settings_help_update_startup">Przy każdym uruchomieniu OwnTV szuka nowej wersji i informuje, gdy jest dostępna. Nic nie jest instalowane bez pytania.</string>
+    <string name="settings_help_auto_start_boot">Otwiera OwnTV samodzielnie po uruchomieniu telewizora, na ekranie wybranym w Uruchamianie aplikacji. Android pozwala aplikacji otworzyć się samej tylko wtedy, gdy może wyświetlać się nad innymi aplikacjami, dlatego włączenie tej opcji otwiera ekran tego uprawnienia. Niektóre telewizory go nie oferują i tam autostart nie zadziała.</string>
+    <string name="settings_help_auto_start_wake">Otwiera OwnTV za każdym razem, gdy telewizor wybudza się z uśpienia, także gdy wybudzono go dla innej aplikacji. Jeśli Uruchamianie aplikacji otwiera kanał, każde wybudzenie uruchamia ten strumień. Gdy ta opcja jest włączona, OwnTV utrzymuje małą usługę w tle z cichym powiadomieniem. Podobnie jak autostart po włączeniu wymaga uprawnienia do wyświetlania nad innymi aplikacjami.</string>
     <string name="settings_help_dns">Wyszukuje adresy dostawcy przez wybrany serwer DNS zamiast serwera Twojej sieci — przydatne, gdy sieć je blokuje lub przekierowuje.</string>
     <string name="settings_help_live_engine">ExoPlayer otwiera kanały dużo szybciej i jako jedyny obsługuje napisy na żywo. mpv odtwarza kanały, z którymi ExoPlayer sobie nie radzi, w tym nietypowy dźwięk. Opcje łączone próbują drugiego odtwarzacza, gdy pierwszy zawiedzie.</string>
     <string name="settings_help_hw">Używa sprzętowego dekodera telewizora: płynne 4K i mniej ciepła. Wyłącz tylko wtedy, gdy niektóre strumienie się zacinają lub pokazują bloki; wtedy pracę przejmuje dekoder programowy.</string>
@@ -1557,6 +1622,7 @@
     <string name="settings_help_sub_lang">Napisy w tym języku włączają się same, gdy strumień je zawiera. W przeciwnym razie pozostają wyłączone, dopóki nie wybierzesz ścieżki w odtwarzaczu.</string>
     <string name="settings_help_live_preview">Zaznaczony kanał gra w podglądzie obok listy TV na żywo, więc widzisz, co leci, zanim go otworzysz. Wymaga układu z miejscem na podgląd.</string>
     <string name="settings_help_preview_audio">Odtwarza dźwięk podglądu razem z obrazem. Wyłączone — przeglądanie jest ciche.</string>
+    <string name="settings_help_preview_on_ok">Wybierz, gdzie OK na kanale najpierw odtwarza go w podglądzie, a kolejne OK na tym samym kanale otwiera go na pełnym ekranie. W TV na żywo podgląd zostaje wtedy na tym kanale podczas przeglądania. Tam, gdzie jest wyłączone, OK od razu otwiera kanał na pełnym ekranie, a podgląd podąża za zaznaczeniem.</string>
     <string name="settings_help_timeshift_window">Jak daleko wstecz może sięgnąć Wstrzymaj i przewiń TV na żywo na kanale bez catch-up. Dłużej oznacza więcej kanału w pamięci urządzenia.</string>
     <string name="settings_help_resume">Pytaj proponuje Wznów lub Od początku, gdy film lub odcinek ma zapisaną pozycję. Zawsze wznawiaj kontynuuje od miejsca zatrzymania; Nigdy nie wznawiaj zaczyna od początku.</string>
     <string name="settings_help_mini">Mały odtwarzacz, który podczas przeglądania odtwarza kanał w rogu. Wybierz jego rozmiar i róg.</string>
@@ -1655,6 +1721,8 @@
     <string name="settings_remote_scan">Zeskanuj lub otwórz w przeglądarce</string>
     <string name="settings_remote_or_open">lub otwórz</string>
     <string name="settings_remote_details_note">Dane pojawią się tutaj; import rozpoczynasz pilotem.</string>
+    <string name="settings_remote_edit_note">Zmiany wypełnią ekran edycji; Zapisz naciskasz pilotem.</string>
+    <string name="settings_help_edit_from_phone">Otwiera tę playlistę w przeglądarce na telefonie, tablecie lub komputerze w tej samej sieci Wi-Fi. Hasła, adresy MAC i adresy playlist M3U nigdy nie są tam pokazywane: zostaw je puste, aby je zachować. To, co wyślesz, wypełni ten ekran, a nic się nie zmieni, dopóki nie naciśniesz Zapisz.</string>
     <string name="settings_key_stop_back">Zatrzymaj i wróć</string>
     <string name="settings_source_type">Typ</string>
     <string name="settings_line_source_type">Xtream, M3U lub portal Stalker</string>

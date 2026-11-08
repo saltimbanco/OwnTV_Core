@@ -218,6 +218,8 @@ dependencies {
     // Preferences + durable background sync
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.androidx.work.runtime)
+    // Whether OwnTV is in front: "Keep auto-sync listening" runs the listener only then.
+    implementation(libs.androidx.lifecycle.process)
 
     // Android TV launcher integration (Watch Next / preview channels). TV-only in practice, but
     // core's LauncherIntegrationRepository is the facade the sync worker calls, so the publisher it
@@ -246,6 +248,9 @@ dependencies {
     // android.jar's org.json is a stub and isReturnDefaultValues silences it; backup/restore is
     // all JSON, so the tests need the real implementation. Same reason as :app.
     testImplementation(libs.org.json)
+    // android.util.JsonReader is a stub too; the test-only stand-in under src/test/java/android/util
+    // delegates to Gson's streaming reader so the Xtream and Stalker parsers can be tested.
+    testImplementation(libs.gson)
     // Virtual time for the sports repository's refresh loop (same artifact :player-core tests with).
     testImplementation(libs.kotlinx.coroutines.test)
     androidTestImplementation(libs.androidx.junit)

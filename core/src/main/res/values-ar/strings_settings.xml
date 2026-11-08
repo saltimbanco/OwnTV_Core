@@ -199,8 +199,9 @@
     <string name="settings_ch_paging">اختصارات جهاز التحكم</string>
     <string name="settings_ch_paging_description">عيّن أزرار جهاز التحكم الإضافية لإجراءات التنقل والتشغيل والتصفح. تظل أزرار التنقل الأساسية محمية.</string>
     <string name="settings_content_menus_title">قوائم الضغط المطوّل</string>
-    <string name="settings_content_menus_description">أعد ترتيب الإجراءات في قوائم القنوات والأفلام والمسلسلات والحلقات</string>
-    <string name="settings_content_menus_hint">اضغط مطوّلًا على «موافق» فوق إجراء لالتقاطه، ثم استخدم الأعلى والأسفل لتحريكه. اضغط «موافق» مرة أخرى لإفلاته.</string>
+    <string name="settings_content_menus_description">أعد ترتيب الإجراءات أو أخفها في قوائم القنوات والأفلام والمسلسلات والحلقات</string>
+    <string name="settings_content_menus_hint">اضغط «موافق» على إجراء لإظهاره أو إخفائه. اضغط مطوّلًا على «موافق» لالتقاطه، ثم استخدم الأعلى والأسفل لتحريكه، واضغط «موافق» مرة أخرى لإفلاته.</string>
+    <string name="settings_content_menus_note">تظهر بعض الإجراءات فقط حيث تنطبق.</string>
     <string name="settings_browsing_lists">التصفح والقوائم</string>
     <string name="settings_browsing_description">تذكّر آخر فئة وآخر عنصر في البث التلفزيوني المباشر والأفلام والمسلسلات</string>
     <string name="settings_home_root">الشاشة الرئيسية</string>
@@ -232,13 +233,17 @@
     <string name="settings_live_preview_description">تشغيل قناة تلقائيًا عند وضع التركيز عليها</string>
     <string name="settings_preview_audio">صوت المعاينة</string>
     <string name="settings_preview_audio_description">تشغيل الصوت في المعاينة المباشرة</string>
+    <string name="settings_preview_on_ok">زر OK يعرض المعاينة أولًا</string>
+    <string name="settings_preview_on_ok_description">يشغّل OK القناة في المعاينة، وOK مرة أخرى يفتحها بملء الشاشة</string>
     <string name="settings_mini_player_root">المشغّل المصغّر</string>
     <string name="settings_mini_player_root_description">حجم المشغّل المصغّر المُرسى وموضعه</string>
     <string name="settings_pip_on_leave">صورة داخل صورة عند مغادرة التطبيق</string>
     <string name="settings_pip_on_leave_description">يستمر تشغيل الفيديو في نافذة صغيرة عند الضغط على الرئيسية</string>
     <string name="settings_prefer_sdr_description">عندما يوفّر البث صورة SDR وصورة HDR معًا، تُشغَّل صورة SDR: للتلفاز الذي تبدو فيه صورة HDR باهتة أو داكنة جدًا. البث الذي يوفّر HDR فقط يبقى HDR. مع ExoPlayer فقط.</string>
-    <string name="settings_auto_frame_rate">معدل الإطارات التلقائي</string>
-    <string name="settings_auto_frame_rate_description">مطابقة معدل تحديث التلفزيون مع الفيديو (24/25/50/60 إطارًا في الثانية) في وضع ملء الشاشة، للبث التلفزيوني المباشر والفيديو حسب الطلب، واستعادته عند الخروج. عطّل هذا الخيار إذا كان التلفزيون أو جهاز الاستقبال يعيد مصافحة HDMI بصورة مزعجة عند كل تغيير للقناة.</string>
+    <string name="settings_auto_frame_rate_films">معدل الإطارات التلقائي للأفلام والمسلسلات</string>
+    <string name="settings_auto_frame_rate_films_description">مطابقة معدل تحديث التلفزيون مع الفيلم أو الحلقة (24/25/50/60 إطارًا في الثانية) في وضع ملء الشاشة، واستعادته عند الخروج.</string>
+    <string name="settings_auto_frame_rate_live">معدل الإطارات التلقائي للبث التلفزيوني المباشر</string>
+    <string name="settings_auto_frame_rate_live_description">مطابقة معدل تحديث التلفزيون مع القناة (25/50/60 إطارًا في الثانية) في وضع ملء الشاشة، واستعادته عند الخروج. عطّل هذا الخيار إذا كان التلفزيون أو جهاز الاستقبال يعيد مصافحة HDMI بصورة مزعجة عند كل تغيير للقناة.</string>
     <string name="settings_afr_pause">إيقاف مؤقت أثناء تبديل الشاشة</string>
     <string name="settings_afr_pause_description">للأفلام فقط. عندما يحتاج التلفاز إلى إعادة المزامنة مع وضع شاشة جديد، ينتظر الفيلم هذه المدة حتى لا تضيع بدايته في الشاشة السوداء. التبديل السلس لا يوقف التشغيل أبدًا.</string>
     <string name="settings_afr_resolution">مطابقة الدقة</string>
@@ -285,6 +290,11 @@
     <string name="settings_check_updates_description">الحصول على أحدث إصدار من GitHub Releases</string>
     <string name="settings_update_startup">التحقق من التحديثات عند بدء التشغيل</string>
     <string name="settings_update_startup_description">البحث عن إصدار جديد عند فتح التطبيق</string>
+    <string name="settings_auto_start_boot">التشغيل التلقائي عند الإقلاع</string>
+    <string name="settings_auto_start_boot_description">فتح OwnTV عند تشغيل التلفزيون</string>
+    <string name="settings_auto_start_wake">التشغيل التلقائي عند الاستيقاظ</string>
+    <string name="settings_auto_start_wake_description">فتح OwnTV عندما يستيقظ التلفزيون من السكون</string>
+    <string name="settings_auto_start_needs_overlay">يتطلب “الظهور فوق التطبيقات الأخرى”</string>
     <string name="settings_about">حول</string>
     <string name="settings_live_latency">زمن استجابة البث المباشر</string>
     <string name="settings_no_settings_match">لا توجد إعدادات تطابق “<xliff:g id="query">%1$s</xliff:g>”</string>
@@ -394,6 +404,7 @@
     <string name="settings_search_keywords_startup">تشغيل فتح واجهة بدء</string>
     <string name="settings_search_keywords_updates">GitHub إصدار تحديث</string>
     <string name="settings_search_keywords_update_auto">تلقائي تحديث إصدار جديد</string>
+    <string name="settings_search_keywords_auto_start">إقلاع تشغيل استيقاظ سكون استعداد تلقائي فتح</string>
     <string name="settings_language_default">الافتراضية (الإنجليزية)</string>
     <string name="settings_language_device">لغة الجهاز</string>
     <string name="settings_language_arabic">العربية</string>
@@ -619,18 +630,33 @@
     <string name="settings_history_all">الكل</string>
     <string name="settings_browsing_last_category">تذكّر آخر فئة</string>
     <string name="settings_browsing_last_category_description">أعد فتح القسم على الفئة التي غادرتها، وليس على «الكل».</string>
+    <string name="settings_guide_follows_live">دليل البرامج يتبع البث التلفزيوني المباشر</string>
+    <string name="settings_guide_follows_live_description">افتح دليل البرامج على فئة البث التلفزيوني المباشر.</string>
+    <string name="settings_help_guide_follows_live">تشغيل: يفتح دليل البرامج على الفئة التي يتذكرها البث التلفزيوني المباشر، وتصبح الفئة التي تختارها في دليل البرامج فئته أيضًا. إيقاف: يحتفظ دليل البرامج بفئة خاصة به.</string>
     <string name="settings_browsing_last_item">تذكّر آخر عنصر</string>
     <string name="settings_browsing_last_item_description">تحتفظ كل فئة بموضع التمرير الخاص بها بدلًا من البدء من الأعلى. ويستعيد البث التلفزيوني المباشر أيضًا آخر قناة كانت قيد التركيز.</string>
+    <string name="settings_browsing_live_categories">فئات البث التلفزيوني المباشر</string>
+    <string name="settings_browsing_live_categories_description">تظهر في البث التلفزيوني المباشر ودليل البرامج والمشغّل والعرض المتعدد. عند إيقاف «كل القنوات» يفتح البث المباشر على فئتك الأولى، أو على المفضّلة إن لم تكن لديك فئات.</string>
     <string name="settings_catchup_player">تشغيل مشاهدة البث الفائت باستخدام</string>
     <string name="settings_customize_title">تخصيص الفئات والعناصر</string>
     <string name="settings_customize_pin_locked">هذه الشاشة مقفلة باستخدام PIN.</string>
     <string name="settings_customize_wrong_pin">رمز PIN غير صحيح — حاول مرة أخرى</string>
     <string name="settings_customize_enter_pin">إدخال PIN</string>
-    <string name="settings_customize_set_pin">🔒 تعيين PIN</string>
-    <string name="settings_customize_change_pin">🔒 تغيير PIN</string>
+    <string name="settings_customize_set_pin">🔒 تعيين رمز PIN لقفل الفئات</string>
+    <string name="settings_customize_change_pin">🔒 تغيير رمز PIN لقفل الفئات</string>
+    <string name="settings_customize_remove_pin">إزالة رمز PIN لقفل الفئات</string>
     <string name="settings_customize_remove_lock">إزالة القفل</string>
-    <string name="settings_customize_settings_pin">طلب رمز PIN لفتح الإعدادات</string>
-    <string name="settings_customize_settings_pin_button">طلب رمز PIN لفتح الإعدادات: <xliff:g id="state">%1$s</xliff:g></string>
+    <string name="settings_lock">قفل الإعدادات</string>
+    <string name="settings_lock_description">تطلب الإعدادات والنسخ الاحتياطي والاستعادة والمزامنة المحلية رمز PIN خاصًا بها. يعيّن كل ملف شخصي رمزه الخاص.</string>
+    <string name="settings_line_settings_lock">رمز PIN خاص للإعدادات</string>
+    <string name="settings_help_settings_lock">رمز PIN لهذا الملف الشخصي تطلبه الإعدادات والنسخ الاحتياطي والاستعادة والمزامنة المحلية قبل فتحها. ليس رمز PIN للملف الشخصي ولا رمز PIN لقفل الفئات: لكل قفل رمزه الخاص، ولا يفتح أي منها قفلًا آخر. يطلب تغيير PIN وإيقاف التشغيل رمز PIN الحالي للإعدادات.</string>
+    <string name="settings_lock_menus">قفل تغييرات قائمة الضغط المطوّل أيضًا</string>
+    <string name="settings_lock_menus_description">تطلب أيضًا إخفاء ونقل وإعادة تسمية وقفل فئة والإزالة من سجل المشاهدة رمز PIN للإعدادات. أما المفضلة والتشغيل فلا تطلبه أبدًا.</string>
+    <string name="settings_line_settings_lock_menus">تطلب تغييرات الضغط المطوّل رمز PIN للإعدادات</string>
+    <string name="settings_help_settings_lock_menus">عند تشغيل هذا الخيار، تطلب تغييرات الضغط المطوّل (إخفاء، نقل، إعادة تسمية، قفل الفئة، والإزالة من سجل المشاهدة) رمز PIN للإعدادات أولًا. يفتحها رمز صحيح واحد حتى تغادر التطبيق أو تبدّل الملف الشخصي. لا تطلبه أبدًا الإضافة إلى المفضلة ولا التشغيل.</string>
+    <string name="settings_lock_change_pin">تغيير PIN</string>
+    <string name="settings_lock_turn_off">إيقاف التشغيل</string>
+    <string name="settings_search_keywords_settings_lock">قفل pin كلمة المرور الرقابة الأبوية الإعدادات</string>
     <string name="settings_customize_description">أخفِ القنوات والأفلام والمسلسلات أو أظهرها، وأعد تسمية الفئات أو ترتيبها لهذا الملف الشخصي. تبقى هذه التخصيصات بعد عمليات إعادة المزامنة.</string>
     <string name="settings_customize_new_category_behavior">سلوك الفئات الجديدة</string>
     <string name="settings_customize_hide">إخفاء</string>
@@ -678,8 +704,7 @@
     <string name="settings_customize_restore_defaults_title">استعادة <xliff:g id="section">%1$s</xliff:g> في <xliff:g id="playlist">%2$s</xliff:g>؟</string>
     <string name="settings_customize_restore_defaults_description">تظهر الفئات والعناصر المخفية من جديد، ويُمسح تغيير الأسماء والترتيب المخصّص، وتعود العناصر المنقولة. تبقى الفئات المجمّعة والمفضّلة ومطابقات دليل البرامج كما هي.</string>
     <string name="settings_customize_rename_hint">لهذا الملف الشخصي فقط. اتركه فارغًا لاستعادة «<xliff:g id="name">%1$s</xliff:g>».</string>
-    <string name="settings_customize_remove_pin_title">هل تريد إزالة قفل PIN؟</string>
-    <string name="settings_customize_remove_pin_message">ستُفتح شاشة التخصيص دون طلب رمز PIN مرة أخرى.</string>
+    <string name="settings_customize_remove_pin_title">هل تريد إزالة رمز PIN لقفل الفئات؟</string>
     <string name="settings_customize_remove_pin_locks">سيُلغى أيضًا قفل كل فئة مقفلة بهذا الرمز.</string>
     <string name="settings_customize_remove">إزالة</string>
     <string name="settings_customize_confirm_pin">تأكيد PIN الجديد</string>
@@ -735,6 +760,8 @@
     <string name="settings_sources_clean_names_custom">إزالة أيضًا</string>
     <string name="settings_sources_clean_names_custom_hint">كلمات مفصولة بـ ; مثل VIP; Backup</string>
     <string name="settings_sources_retest">إعادة الاختبار</string>
+    <string name="settings_sources_ignore_limit">تجاهل حد الاتصالات</string>
+    <string name="settings_sources_ignore_limit_on">تم تجاهل حد الاتصالات: قد يفتح العرض المتعدد والتسجيلات بثًا أكثر مما تذكره قائمة التشغيل هذه. وإذا رفض المزوّد بثًا فسيظهر ذلك كالمعتاد.</string>
     <string name="settings_sources_probe_title">اختبار هذه القائمة؟</string>
     <string name="settings_sources_probe_warning">لا يذكر كثير من المزوّدين عدد القنوات التي يمكنك مشاهدتها في وقت واحد، لذا يكتشف OwnTV ذلك بفتح بضع قنوات ومعرفة أيها يستمر. سيتوقف كل ما يعمل الآن، وقد يستغرق هذا حتى دقيقتين.</string>
     <string name="settings_sources_probe_running">جارٍ التحقق من عدد القنوات التي يسمح بها هذا المزوّد… (<xliff:g id="current">%1$d</xliff:g> من <xliff:g id="total">%2$d</xliff:g>)</string>
@@ -865,7 +892,6 @@
     <string name="settings_backup_kids_profile">ملف الأطفال الشخصي</string>
     <string name="settings_backup_profile_current">«<xliff:g id="name">%1$s</xliff:g>» (الحالي)</string>
     <string name="settings_backup_profile_locked">«<xliff:g id="name">%1$s</xliff:g>» مقفل</string>
-    <string name="settings_backup_profile_pin">PIN الملف الشخصي</string>
     <string name="settings_backup_pin_incorrect">رمز PIN غير صحيح.</string>
     <string name="settings_backup_pin_locked">مقفل باستخدام PIN</string>
     <string name="settings_backup_unlock">فتح القفل</string>
@@ -914,12 +940,22 @@
         <item quantity="other">تم تخطي <xliff:g id="count">%1$d</xliff:g> مصدر لأن نوع قائمة التشغيل الخاص به غير مدعوم.</item>
     </plurals>
     <string name="settings_backup_export_error">فشل التصدير.</string>
+    <string name="settings_backup_no_file_app">لا يوجد تطبيق على هذا الهاتف يمكنه حفظ الملف. استخدم «مشاركة» بدلًا من ذلك.</string>
     <string name="settings_backup_read_error">تعذرت قراءة ملف النسخة الاحتياطية.</string>
     <string name="settings_backup_import_error">فشل الاستيراد.</string>
     <string name="settings_backup_invalid_locale">احتوت هذه النسخة الاحتياطية على لغة تطبيق غير مدعومة. نجحت الاستعادة، ولكن تم الاحتفاظ بلغتك الحالية.</string>
     <string name="settings_backup_which_profiles">الملفات الشخصية المراد نسخها احتياطيًا</string>
     <string name="settings_backup_selected_profiles">ستحتوي النسخة الاحتياطية فقط على الملفات الشخصية المحددة وبياناتها. تحتاج الملفات الشخصية المقفلة إلى رمز PIN الخاص بها.</string>
     <string name="settings_backup_profile_pin_description">هذا ليس ملفك الشخصي الحالي. أدخل رمز PIN الخاص به لتضمينه في النسخة الاحتياطية — ودون رمز PIN، لن تُنسخ بياناته احتياطيًا.</string>
+    <string name="settings_backup_profile_clash_title">«<xliff:g id="name">%1$s</xliff:g>» موجود بالفعل على هذا الجهاز</string>
+    <string name="settings_backup_profile_clash_body">تحتوي النسخة الاحتياطية على ملف شخصي بالاسم نفسه. ماذا تريد أن تفعل به؟</string>
+    <string name="settings_backup_profile_merge">الدمج معه</string>
+    <string name="settings_backup_profile_merge_description">يحتفظ بما لديه هنا ويضيف ما تجلبه النسخة الاحتياطية.</string>
+    <string name="settings_backup_profile_replace">استبداله</string>
+    <string name="settings_backup_profile_replace_description">تُمسح أولًا مفضلته وسجل مشاهدته ونقاط الاستئناف والتخصيصات والترتيب اليدوي هنا، للأجزاء التي تُستعاد.</string>
+    <string name="settings_backup_profile_keep_both">الاحتفاظ بالاثنين</string>
+    <string name="settings_backup_profile_keep_both_description">يدخل الملف الشخصي من النسخة الاحتياطية كملف شخصي جديد: «<xliff:g id="name">%1$s</xliff:g>».</string>
+    <string name="settings_backup_profile_restored_name"><xliff:g id="name">%1$s</xliff:g> (مستعاد)</string>
     <string name="settings_metadata_optional">اختياري</string>
     <string name="settings_metadata_test_title">Oppenheimer</string>
     <string name="settings_bulk_rename_title">إعادة التسمية المجمّعة</string>
@@ -1297,6 +1333,32 @@
     <string name="local_sync_last_synced">آخر مزامنة: <xliff:g id="when">%1$s</xliff:g></string>
     <string name="local_sync_already_paired">مقترن بالفعل</string>
     <string name="local_sync_device_with_code"><xliff:g id="name">%1$s</xliff:g> (<xliff:g id="code">%2$s</xliff:g>)</string>
+    <string name="local_sync_profile_note">لا يُزامَن إلا الملف الشخصي المستخدم: <xliff:g id="profile">%1$s</xliff:g> هنا، مع الملف الشخصي المستخدم على الجهاز الآخر.</string>
+    <string name="local_auto_sync_title">المزامنة التلقائية</string>
+    <string name="local_auto_sync_for_device">ما يزامنه هذا الجهاز تلقائيًا مع <xliff:g id="device">%1$s</xliff:g>، وكم مرة.</string>
+    <string name="local_auto_sync_enable">المزامنة التلقائية مع هذا الجهاز</string>
+    <string name="local_auto_sync_enable_hint">افتح المزامنة المحلية على الجهاز الآخر أيضًا: سيُطلب منه السماح بذلك.</string>
+    <string name="local_auto_sync_waiting">في انتظار سماح <xliff:g id="device">%1$s</xliff:g>…</string>
+    <string name="local_auto_sync_declined">لم يسمح <xliff:g id="device">%1$s</xliff:g> بالمزامنة التلقائية.</string>
+    <string name="local_auto_sync_accept_title">السماح بالمزامنة التلقائية؟</string>
+    <string name="local_auto_sync_accept_body">يريد <xliff:g id="device">%1$s</xliff:g> المزامنة تلقائيًا مع هذا الجهاز كلما كان OwnTV مفتوحًا على كليهما. لا يدخل إلا ما تسمح به على هذا الجهاز، ويمكن لأي منهما إيقافها.</string>
+    <string name="local_auto_sync_accept">السماح</string>
+    <string name="local_auto_sync_decline">عدم السماح</string>
+    <string name="local_auto_sync_what_to_sync">ما يزامنه هذا الجهاز</string>
+    <string name="local_auto_sync_when">كم مرة</string>
+    <string name="local_auto_sync_timing_immediately">في كل مرة يُفتح فيها أحد التطبيقين أو يُغلق</string>
+    <string name="local_auto_sync_timing_daily">يوميًا</string>
+    <string name="local_auto_sync_timing_weekly">أسبوعيًا</string>
+    <string name="local_auto_sync_note">تدمج المزامنة التلقائية في الاتجاهين، ويبقى المحذوف محذوفًا. يقرر كل جهاز ما يسمح بمروره: لا تنتقل قوائم التشغيل مع بيانات دخولها والإعدادات إلا حيث تكون محددة.</string>
+    <string name="local_auto_sync_last_run">آخر مزامنة تلقائية: <xliff:g id="when">%1$s</xliff:g></string>
+    <string name="local_auto_sync_their_sections">يزامن <xliff:g id="device">%1$s</xliff:g>: <xliff:g id="sections">%2$s</xliff:g></string>
+    <string name="local_auto_sync_profiles">الملفات الشخصية: <xliff:g id="here">%1$s</xliff:g> ↔ <xliff:g id="there">%2$s</xliff:g></string>
+    <string name="local_auto_sync_profile_hint">يربط هذا الملف الشخصي، <xliff:g id="profile">%1$s</xliff:g>، بالملف الشخصي المستخدم على <xliff:g id="device">%2$s</xliff:g>.</string>
+    <string name="local_auto_sync_turned_off">أُوقفت المزامنة التلقائية على <xliff:g id="device">%1$s</xliff:g></string>
+    <string name="local_auto_sync_unreachable">تعذّر الوصول إلى <xliff:g id="device">%1$s</xliff:g>، ستُعاد المحاولة</string>
+    <string name="local_auto_sync_listen">إبقاء المزامنة التلقائية في وضع الاستماع</string>
+    <string name="local_auto_sync_listen_description">تشغيل: يمكن للأجهزة المقترنة المزامنة مع هذا الجهاز كلما كان OwnTV مفتوحًا هنا. إيقاف: فقط أثناء تشغيل وضع المزامنة.</string>
+    <string name="local_auto_sync_listening">في وضع الاستماع</string>
     <string name="more_pane_last_backup">آخر نسخة احتياطية</string>
     <string name="more_pane_encrypted">مشفّرة</string>
     <string name="more_group_your_things">أشياؤك</string>
@@ -1510,7 +1572,7 @@
     <string name="settings_line_guide_width">قائمة القنوات والخط الزمني</string>
     <string name="settings_line_browsing">تذكُّر آخر فئة وآخر عنصر</string>
     <string name="settings_line_home">اختيار الصفوف وترتيبها وتصفيتها</string>
-    <string name="settings_line_content_menus">إعادة ترتيب الإجراءات في كل قائمة</string>
+    <string name="settings_line_content_menus">أعد ترتيب الإجراءات أو أخفها في كل قائمة</string>
     <string name="settings_line_remote_shortcuts">تعيين أزرار الريموت غير المستخدمة</string>
     <string name="settings_line_customize">الإخفاء والإظهار وإعادة التسمية والترتيب</string>
     <string name="settings_line_metadata">الملصقات والقصص وطاقم التمثيل والتقييمات للأفلام والمسلسلات</string>
@@ -1523,6 +1585,7 @@
     <string name="settings_line_dns">خادم DNS مخصص</string>
     <string name="settings_line_quick_live_preview">تشغيل القناة المحددة في البث المباشر</string>
     <string name="settings_line_preview_sound">الصوت في معاينة البث المباشر</string>
+    <string name="settings_line_preview_on_ok">المعاينة أولًا، ثم ملء الشاشة</string>
     <string name="settings_line_quick_channel_numbers">اكتب رقمًا على الريموت للانتقال إلى القناة</string>
     <string name="settings_line_prefer_sdr">SDR عندما يوفّر البث الاثنين</string>
     <string name="settings_line_quick_autoplay">بدء الحلقة التالية تلقائيًا</string>
@@ -1603,6 +1666,8 @@
     <string name="settings_help_startup">ما يعرضه OwnTV عند بدء تشغيله: الصفحة الرئيسية، أو آخر قناة شاهدتها، أو مفضلاتك، أو قناة تختارها.</string>
     <string name="settings_help_check_updates">يبحث الآن في GitHub عن إصدار أحدث من OwnTV ويعرض تثبيته. تبقى قوائم التشغيل والمفضلات والإعدادات كما هي.</string>
     <string name="settings_help_update_startup">يبحث عن إصدار جديد في كل مرة يبدأ فيها OwnTV ويخبرك عند توفره. لا يُثبَّت أي شيء دون سؤالك.</string>
+    <string name="settings_help_auto_start_boot">يفتح OwnTV تلقائيًا بعد اكتمال تشغيل التلفزيون، على الشاشة المختارة في بدء تشغيل التطبيق. لا يسمح Android لتطبيق بأن يفتح نفسه إلا إذا كان مسموحًا له بالظهور فوق التطبيقات الأخرى، لذا يؤدي تفعيل هذا الخيار إلى فتح شاشة هذا الإذن. بعض أجهزة التلفزيون لا توفّره، ولا يمكن للتشغيل التلقائي أن يعمل عليها.</string>
+    <string name="settings_help_auto_start_wake">يفتح OwnTV في كل مرة يستيقظ فيها التلفزيون من السكون، حتى لو أيقظته لاستخدام تطبيق آخر. إذا كان بدء تشغيل التطبيق يفتح قناة، فكل استيقاظ يبدأ ذلك البث. ما دام هذا الخيار مفعّلًا، يُبقي OwnTV خدمة صغيرة في الخلفية مع إشعار صامت. ومثل التشغيل التلقائي عند الإقلاع، يحتاج إلى إذن الظهور فوق التطبيقات الأخرى.</string>
     <string name="settings_help_dns">يبحث عن عناوين مزوّدك عبر خادم DNS تختاره بدلًا من خادم شبكتك — مفيد عندما تحظرها شبكتك أو تعيد توجيهها.</string>
     <string name="settings_help_live_engine">يفتح ExoPlayer القنوات أسرع بكثير وهو الوحيد الذي يدعم الترجمة المباشرة. يشغّل mpv قنوات لا يستطيع ExoPlayer تشغيلها، ومنها بعض الصوت غير المعتاد. تجرّب الخيارات المركّبة المشغّل الآخر عند فشل الأول.</string>
     <string name="settings_help_hw">يستخدم وحدة فك الترميز في عتاد التلفاز: 4K سلس وحرارة أقل. أوقفه فقط إذا تقطّعت بعض البثوث أو ظهرت فيها مربعات؛ عندها يتولى فك الترميز البرمجي العمل.</string>
@@ -1613,6 +1678,7 @@
     <string name="settings_help_sub_lang">تُشغَّل الترجمة بهذه اللغة تلقائيًا عندما يحتويها البث. وإلا تبقى الترجمة متوقفة حتى تختار مسارًا في المشغّل.</string>
     <string name="settings_help_live_preview">تُشغَّل القناة المحددة في المعاينة بجانب قائمة البث المباشر، فترى ما يُعرض قبل فتحها. يحتاج إلى تخطيط فيه مساحة للمعاينة.</string>
     <string name="settings_help_preview_audio">يشغّل صوت المعاينة مع صورتها. عند الإيقاف يبقى التصفح صامتًا.</string>
+    <string name="settings_help_preview_on_ok">اختر أين يشغّل OK القناة في المعاينة أولًا، ثم يفتحها OK آخر على القناة نفسها بملء الشاشة. في البث المباشر تبقى المعاينة حينها على تلك القناة أثناء التصفح. حيث يكون معطّلًا، يفتح OK القناة بملء الشاشة فورًا وتتبع المعاينة التحديد.</string>
     <string name="settings_help_timeshift_window">إلى أي مدى يمكن لميزة الإيقاف المؤقت والترجيع الرجوع في قناة بلا مشاهدة استدراكية. المدة الأطول تحفظ جزءًا أكبر من القناة في تخزين هذا الجهاز.</string>
     <string name="settings_help_resume">يعرض السؤال عن الاستئناف خيارَي استئناف أو البدء من جديد عندما يكون للفيلم أو الحلقة موضع محفوظ. الاستئناف دائمًا يكمل من حيث توقفت، وعدم الاستئناف يبدأ من البداية.</string>
     <string name="settings_help_mini">المشغّل الصغير الذي يُبقي القناة تعمل في زاوية أثناء التصفح. اختر حجمه والزاوية التي يظهر فيها.</string>
@@ -1723,6 +1789,8 @@
     <string name="settings_remote_scan">امسح الرمز أو افتح في متصفح</string>
     <string name="settings_remote_or_open">أو افتح</string>
     <string name="settings_remote_details_note">تظهر التفاصيل هنا؛ وتبدأ الاستيراد بجهاز التحكم.</string>
+    <string name="settings_remote_edit_note">تملأ التغييرات شاشة التعديل؛ وأنت تضغط حفظ بجهاز التحكم.</string>
+    <string name="settings_help_edit_from_phone">يفتح قائمة التشغيل هذه في متصفح على هاتف أو جهاز لوحي أو كمبيوتر على شبكة Wi-Fi نفسها. لا تُعرض هناك أبدًا كلمات المرور وعناوين MAC وعناوين قوائم M3U: اتركها فارغة للاحتفاظ بها. ما ترسله يملأ هذه الشاشة، ولا يتغير شيء حتى تضغط حفظ.</string>
     <string name="settings_key_stop_back">إيقاف والرجوع</string>
     <string name="settings_source_type">النوع</string>
     <string name="settings_line_source_type">Xtream أو M3U أو بوابة Stalker</string>

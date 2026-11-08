@@ -195,8 +195,9 @@
     <string name="settings_ch_paging">রিমোট শর্টকাট</string>
     <string name="settings_ch_paging_description">নেভিগেশন, প্লেব্যাক ও ব্রাউজিং কাজের জন্য রিমোটের অতিরিক্ত বোতাম নির্ধারণ করুন। জরুরি নেভিগেশন বোতাম সুরক্ষিত থাকবে।</string>
     <string name="settings_content_menus_title">লং-প্রেস মেনু</string>
-    <string name="settings_content_menus_description">চ্যানেল, সিনেমা, সিরিজ ও পর্বের মেনুর অ্যাকশনগুলি সাজিয়ে নিন</string>
-    <string name="settings_content_menus_hint">কোনও অ্যাকশনে OK চেপে ধরে সেটি তুলে নিন, তারপর উপর-নিচ দিয়ে সরান। নামাতে আবার OK চাপুন।</string>
+    <string name="settings_content_menus_description">চ্যানেল, সিনেমা, সিরিজ ও পর্বের মেনুর অ্যাকশনগুলি সাজিয়ে নিন বা লুকিয়ে রাখুন</string>
+    <string name="settings_content_menus_hint">কোনও অ্যাকশন দেখাতে বা লুকাতে তাতে OK চাপুন। তুলে নিতে OK চেপে ধরুন, উপর-নিচ দিয়ে সরান, আর নামাতে আবার OK চাপুন।</string>
+    <string name="settings_content_menus_note">কিছু অ্যাকশন শুধু প্রযোজ্য জায়গাতেই দেখা যায়।</string>
     <string name="settings_browsing_lists">ব্রাউজিং ও তালিকা</string>
     <string name="settings_browsing_description">লাইভ টিভি, সিনেমা ও সিরিজে সর্বশেষ বিভাগ ও সর্বশেষ আইটেম মনে রাখুন</string>
     <string name="settings_home_root">হোম স্ক্রিন</string>
@@ -228,13 +229,17 @@
     <string name="settings_live_preview_description">কোনো চ্যানেলে ফোকাস করলে সেটি স্বয়ংক্রিয়ভাবে চালান</string>
     <string name="settings_preview_audio">প্রিভিউয়ের অডিও</string>
     <string name="settings_preview_audio_description">লাইভ প্রিভিউতে শব্দ চালান</string>
+    <string name="settings_preview_on_ok">OK আগে প্রিভিউ দেখায়</string>
+    <string name="settings_preview_on_ok_description">OK চ্যানেলটি প্রিভিউতে চালায়, আবার OK চাপলে ফুল স্ক্রিনে খোলে</string>
     <string name="settings_mini_player_root">মিনি-প্লেয়ার</string>
     <string name="settings_mini_player_root_description">ডক করা মিনি-প্লেয়ারের আকার ও অবস্থান</string>
     <string name="settings_pip_on_leave">অ্যাপ ছাড়লে পিকচার-ইন-পিকচার</string>
     <string name="settings_pip_on_leave_description">হোম চাপলে ভিডিওটি একটি ছোট উইন্ডোতে চলতে থাকে</string>
     <string name="settings_prefer_sdr_description">কোনো স্ট্রিমে SDR ও HDR দুই ধরনের ছবি থাকলে SDR ছবিটি চালানো হয়: যে টিভিতে HDR ফ্যাকাশে বা খুব অন্ধকার দেখায় তার জন্য। শুধু HDR থাকা স্ট্রিম HDR-ই থাকে। শুধু ExoPlayer-এ।</string>
-    <string name="settings_auto_frame_rate">স্বয়ংক্রিয় ফ্রেম রেট</string>
-    <string name="settings_auto_frame_rate_description">পূর্ণ পর্দায় লাইভ টিভি ও VOD-এর জন্য ভিডিওর সঙ্গে TV-এর রিফ্রেশ রেট (24/25/50/60 fps) মিলিয়ে নিন এবং বের হলে আগের অবস্থায় ফিরিয়ে দিন। প্রতিবার চ্যানেল বদলালে আপনার TV বা রিসিভার HDMI-তে শব্দসহ আবার হ্যান্ডশেক করলে এটি বন্ধ করুন।</string>
+    <string name="settings_auto_frame_rate_films">সিনেমা ও সিরিজের জন্য স্বয়ংক্রিয় ফ্রেম রেট</string>
+    <string name="settings_auto_frame_rate_films_description">পূর্ণ পর্দায় সিনেমা বা পর্বের সঙ্গে TV-এর রিফ্রেশ রেট (24/25/50/60 fps) মিলিয়ে নিন এবং বের হলে আগের অবস্থায় ফিরিয়ে দিন।</string>
+    <string name="settings_auto_frame_rate_live">লাইভ টিভির জন্য স্বয়ংক্রিয় ফ্রেম রেট</string>
+    <string name="settings_auto_frame_rate_live_description">পূর্ণ পর্দায় চ্যানেলের সঙ্গে TV-এর রিফ্রেশ রেট (25/50/60 fps) মিলিয়ে নিন এবং বের হলে আগের অবস্থায় ফিরিয়ে দিন। প্রতিবার চ্যানেল বদলালে আপনার TV বা রিসিভার HDMI-তে শব্দসহ আবার হ্যান্ডশেক করলে এটি বন্ধ করুন।</string>
     <string name="settings_afr_pause">ডিসপ্লে বদলের সময় বিরতি</string>
     <string name="settings_afr_pause_description">শুধু সিনেমা। টিভিকে নতুন ডিসপ্লে মোডে আবার সিঙ্ক করতে হলে, সিনেমা এতক্ষণ অপেক্ষা করে যাতে শুরুটা কালো পর্দায় হারিয়ে না যায়। মসৃণ বদলে কখনও বিরতি হয় না।</string>
     <string name="settings_afr_resolution">রেজোলিউশন মেলান</string>
@@ -277,6 +282,11 @@
     <string name="settings_check_updates_description">GitHub Releases থেকে সর্বশেষ সংস্করণ পান</string>
     <string name="settings_update_startup">চালুর সময় আপডেট পরীক্ষা করুন</string>
     <string name="settings_update_startup_description">অ্যাপ খুললে নতুন সংস্করণ খুঁজুন</string>
+    <string name="settings_auto_start_boot">চালু হলে নিজে থেকে খুলুন</string>
+    <string name="settings_auto_start_boot_description">টিভি চালু হলে OwnTV খুলুন</string>
+    <string name="settings_auto_start_wake">জেগে উঠলে নিজে থেকে খুলুন</string>
+    <string name="settings_auto_start_wake_description">টিভি স্লিপ থেকে জেগে উঠলে OwnTV খুলুন</string>
+    <string name="settings_auto_start_needs_overlay">“অন্য অ্যাপের উপরে দেখানো” প্রয়োজন</string>
     <string name="settings_about">সম্পর্কে</string>
     <string name="settings_live_latency">লাইভ বিলম্ব</string>
     <string name="settings_no_settings_match">“<xliff:g id="query">%1$s</xliff:g>”-এর সঙ্গে কোনো সেটিংস মেলেনি</string>
@@ -386,6 +396,7 @@
     <string name="settings_search_keywords_startup">চালু খোলা শুরুপৃষ্ঠা</string>
     <string name="settings_search_keywords_updates">github রিলিজ সংস্করণ</string>
     <string name="settings_search_keywords_update_auto">স্বয়ংক্রিয় আপডেট নতুন সংস্করণ</string>
+    <string name="settings_search_keywords_auto_start">বুট চালু জাগা স্লিপ স্ট্যান্ডবাই স্বয়ংক্রিয় খোলা</string>
     <string name="settings_language_default">ডিফল্ট (ইংরেজি)</string>
     <string name="settings_language_device">ডিভাইসের ভাষা</string>
     <string name="settings_language_arabic">আরবি</string>
@@ -607,18 +618,33 @@
     <string name="settings_history_all">সব</string>
     <string name="settings_browsing_last_category">সর্বশেষ বিভাগ মনে রাখুন</string>
     <string name="settings_browsing_last_category_description">সব বিভাগে নয়, যে বিভাগে ছেড়েছিলেন সেখানেই আবার খুলুন।</string>
+    <string name="settings_guide_follows_live">অনুষ্ঠান নির্দেশিকা লাইভ টিভি অনুসরণ করবে</string>
+    <string name="settings_guide_follows_live_description">লাইভ টিভির বিভাগেই অনুষ্ঠান নির্দেশিকা খুলুন।</string>
+    <string name="settings_help_guide_follows_live">চালু: লাইভ টিভি যে বিভাগ মনে রাখে, অনুষ্ঠান নির্দেশিকা সেখানেই খোলে, আর অনুষ্ঠান নির্দেশিকায় যে বিভাগ বাছবেন তা লাইভ টিভিরও বিভাগ হয়ে যায়। বন্ধ: অনুষ্ঠান নির্দেশিকা নিজের আলাদা বিভাগ রাখে।</string>
     <string name="settings_browsing_last_item">সর্বশেষ আইটেম মনে রাখুন</string>
     <string name="settings_browsing_last_item_description">প্রতিটি বিভাগ ওপর থেকে শুরু না করে তার নিজস্ব স্ক্রল অবস্থান ধরে রাখে। লাইভ টিভিতে সর্বশেষ ফোকাসে থাকা চ্যানেলটিও ফিরিয়ে আনা হয়।</string>
+    <string name="settings_browsing_live_categories">লাইভ টিভির বিভাগ</string>
+    <string name="settings_browsing_live_categories_description">লাইভ টিভি, অনুষ্ঠান নির্দেশিকা, প্লেয়ার ও মাল্টিভিউতে দেখানো হয়। সব চ্যানেল বন্ধ থাকলে লাইভ টিভি আপনার প্রথম বিভাগে খোলে, কোনও বিভাগ না থাকলে পছন্দেরগুলোতে।</string>
     <string name="settings_catchup_player">ক্যাচ-আপ চালানোর প্লেয়ার</string>
     <string name="settings_customize_title">বিভাগ ও আইটেম নিজের মতো সাজান</string>
     <string name="settings_customize_pin_locked">এই স্ক্রিনটি PIN দিয়ে লক করা।</string>
     <string name="settings_customize_wrong_pin">ভুল PIN—আবার চেষ্টা করুন</string>
     <string name="settings_customize_enter_pin">PIN লিখুন</string>
-    <string name="settings_customize_set_pin">🔒 PIN সেট করুন</string>
-    <string name="settings_customize_change_pin">🔒 PIN পরিবর্তন করুন</string>
+    <string name="settings_customize_set_pin">🔒 ক্যাটাগরি লকের PIN সেট করুন</string>
+    <string name="settings_customize_change_pin">🔒 ক্যাটাগরি লকের PIN বদলান</string>
+    <string name="settings_customize_remove_pin">ক্যাটাগরি লকের PIN সরান</string>
     <string name="settings_customize_remove_lock">লক সরান</string>
-    <string name="settings_customize_settings_pin">সেটিংস খুলতে PIN চাওয়া হবে</string>
-    <string name="settings_customize_settings_pin_button">সেটিংস খুলতে PIN চাওয়া হবে: <xliff:g id="state">%1$s</xliff:g></string>
+    <string name="settings_lock">সেটিংস লক</string>
+    <string name="settings_lock_description">সেটিংস, ব্যাকআপ ও পুনরুদ্ধার এবং লোকাল সিঙ্ক নিজেদের আলাদা PIN চায়। প্রতিটি প্রোফাইল নিজের PIN সেট করে।</string>
+    <string name="settings_line_settings_lock">সেটিংসের জন্য আলাদা PIN</string>
+    <string name="settings_help_settings_lock">এই প্রোফাইলের একটি PIN, যা সেটিংস, ব্যাকআপ ও পুনরুদ্ধার এবং লোকাল সিঙ্ক খোলার আগে চায়। এটি প্রোফাইলের PIN নয়, ক্যাটাগরি লকের PIN-ও নয়: প্রতিটি লকের নিজস্ব PIN আছে, এবং কোনোটি অন্যটি খোলে না। PIN বদলান ও বন্ধ করুন বর্তমান সেটিংস PIN চায়।</string>
+    <string name="settings_lock_menus">লং-প্রেস মেনুর পরিবর্তনগুলোও লক করুন</string>
+    <string name="settings_lock_menus_description">লুকান, সরান, নাম বদলান, কোনো ক্যাটাগরি লক করা এবং দেখার ইতিহাস থেকে সরানোও সেটিংস PIN চায়। ফেভারিট ও প্লে কখনো চায় না।</string>
+    <string name="settings_line_settings_lock_menus">লং-প্রেসের পরিবর্তন সেটিংস PIN চায়</string>
+    <string name="settings_help_settings_lock_menus">এটি চালু থাকলে লং-প্রেসের পরিবর্তনগুলো (লুকান, সরান, নাম বদলান, ক্যাটাগরি লক করুন এবং দেখার ইতিহাস থেকে সরান) আগে সেটিংস PIN চায়। একটি সঠিক PIN অ্যাপ ছেড়ে যাওয়া বা প্রোফাইল বদলানো পর্যন্ত সেগুলো খুলে রাখে। ফেভারিটে যোগ করা ও প্লে করা কখনো চায় না।</string>
+    <string name="settings_lock_change_pin">PIN বদলান</string>
+    <string name="settings_lock_turn_off">বন্ধ করুন</string>
+    <string name="settings_search_keywords_settings_lock">লক pin পাসওয়ার্ড প্যারেন্টাল সেটিংস</string>
     <string name="settings_customize_description">এই প্রোফাইলের জন্য চ্যানেল, সিনেমা ও সিরিজ লুকান বা আবার দেখান এবং বিভাগগুলোর নাম পরিবর্তন বা ক্রম বদলান। পুনরায় সিঙ্ক করলেও এগুলো বজায় থাকবে।</string>
     <string name="settings_customize_new_category_behavior">নতুন বিভাগের আচরণ</string>
     <string name="settings_customize_hide">লুকান</string>
@@ -662,8 +688,7 @@
     <string name="settings_customize_restore_defaults_title"><xliff:g id="playlist">%2$s</xliff:g>-এর <xliff:g id="section">%1$s</xliff:g> ডিফল্টে ফিরিয়ে আনবেন?</string>
     <string name="settings_customize_restore_defaults_description">লুকানো বিভাগ ও আইটেম আবার দেখাবে, নাম পরিবর্তন ও কাস্টম ক্রম মুছে যাবে এবং সরিয়ে নেওয়া আইটেম ফিরে আসবে। সম্মিলিত বিভাগ, পছন্দেরগুলো ও অনুষ্ঠান নির্দেশিকার মিল অপরিবর্তিত থাকবে।</string>
     <string name="settings_customize_rename_hint">শুধু এই প্রোফাইলের জন্য। “<xliff:g id="name">%1$s</xliff:g>” ফিরিয়ে আনতে ফাঁকা রাখুন।</string>
-    <string name="settings_customize_remove_pin_title">PIN লক সরাবেন?</string>
-    <string name="settings_customize_remove_pin_message">নিজের মতো সাজানোর স্ক্রিনটি আবার PIN না চেয়েই খুলবে।</string>
+    <string name="settings_customize_remove_pin_title">ক্যাটাগরি লকের PIN সরাবেন?</string>
     <string name="settings_customize_remove_pin_locks">এই PIN দিয়ে লক করা সব বিভাগও আনলক হয়ে যাবে।</string>
     <string name="settings_customize_remove">সরান</string>
     <string name="settings_customize_confirm_pin">নতুন PIN নিশ্চিত করুন</string>
@@ -715,6 +740,8 @@
     <string name="settings_sources_clean_names_custom">এগুলোও সরান</string>
     <string name="settings_sources_clean_names_custom_hint">; দিয়ে আলাদা শব্দ, যেমন VIP; Backup</string>
     <string name="settings_sources_retest">আবার পরীক্ষা করুন</string>
+    <string name="settings_sources_ignore_limit">সংযোগের সীমা উপেক্ষা করুন</string>
+    <string name="settings_sources_ignore_limit_on">সংযোগের সীমা উপেক্ষা করা হচ্ছে: মাল্টিভিউ ও রেকর্ডিং এই প্লেলিস্টের জানানো সংখ্যার চেয়ে বেশি স্ট্রিম খুলতে পারে। প্রদানকারী কোনো স্ট্রিম ফিরিয়ে দিলে তা আগের মতোই জানানো হবে।</string>
     <string name="settings_sources_probe_title">এই প্লেলিস্ট পরীক্ষা করবেন?</string>
     <string name="settings_sources_probe_warning">অনেক সরবরাহকারী কখনোই জানায় না আপনি একসঙ্গে কতগুলি চ্যানেল দেখতে পারবেন, তাই OwnTV কয়েকটি চ্যানেল খুলে কোনগুলি টিকে থাকে তা দেখে এটি নির্ণয় করে। এখন যা চলছে সব বন্ধ হয়ে যাবে, এবং এতে দুই মিনিট পর্যন্ত লাগতে পারে।</string>
     <string name="settings_sources_probe_running">এই সরবরাহকারী কতগুলি চ্যানেল অনুমোদন করে তা পরীক্ষা করা হচ্ছে… (<xliff:g id="total">%2$d</xliff:g>-এর মধ্যে <xliff:g id="current">%1$d</xliff:g>)</string>
@@ -825,7 +852,6 @@
     <string name="settings_backup_kids_profile">শিশুদের প্রোফাইল</string>
     <string name="settings_backup_profile_current">“<xliff:g id="name">%1$s</xliff:g>” (বর্তমান)</string>
     <string name="settings_backup_profile_locked">“<xliff:g id="name">%1$s</xliff:g>” লক করা</string>
-    <string name="settings_backup_profile_pin">প্রোফাইল PIN</string>
     <string name="settings_backup_pin_incorrect">PIN সঠিক নয়।</string>
     <string name="settings_backup_pin_locked">PIN দিয়ে লক করা</string>
     <string name="settings_backup_unlock">আনলক করুন</string>
@@ -866,12 +892,22 @@
         <item quantity="other">প্লেলিস্টের ধরন সমর্থিত নয় বলে <xliff:g id="count">%1$d</xliff:g>টি উৎস এড়িয়ে যাওয়া হয়েছে।</item>
     </plurals>
     <string name="settings_backup_export_error">এক্সপোর্ট করা যায়নি।</string>
+    <string name="settings_backup_no_file_app">এই ফোনে ফাইল সেভ করতে পারে এমন কোনো অ্যাপ নেই। এর বদলে শেয়ার করুন ব্যবহার করুন।</string>
     <string name="settings_backup_read_error">ব্যাকআপ ফাইল পড়া যায়নি।</string>
     <string name="settings_backup_import_error">ইমপোর্ট করা যায়নি।</string>
     <string name="settings_backup_invalid_locale">এই ব্যাকআপে অ্যাপের একটি অসমর্থিত ভাষা ছিল। পুনরুদ্ধার সফল হয়েছে, তবে আপনার বর্তমান ভাষাই রাখা হয়েছে।</string>
     <string name="settings_backup_which_profiles">কোন প্রোফাইলগুলো ব্যাকআপ করবেন</string>
     <string name="settings_backup_selected_profiles">ব্যাকআপে শুধু নির্বাচিত প্রোফাইল ও সেগুলোর ডেটা থাকবে। লক করা প্রোফাইলের PIN প্রয়োজন।</string>
     <string name="settings_backup_profile_pin_description">এটি আপনার বর্তমান প্রোফাইল নয়। ব্যাকআপে অন্তর্ভুক্ত করতে এর PIN লিখুন—PIN ছাড়া এর ডেটা ব্যাকআপ করা হবে না।</string>
+    <string name="settings_backup_profile_clash_title">“<xliff:g id="name">%1$s</xliff:g>” এই ডিভাইসে আগেই আছে</string>
+    <string name="settings_backup_profile_clash_body">ব্যাকআপে একই নামের একটি প্রোফাইল আছে। এটি নিয়ে কী করা হবে?</string>
+    <string name="settings_backup_profile_merge">এর সঙ্গে মেলান</string>
+    <string name="settings_backup_profile_merge_description">এখানে যা আছে তা রাখে এবং ব্যাকআপ যা আনে তা যোগ করে।</string>
+    <string name="settings_backup_profile_replace">এটি বদলে দিন</string>
+    <string name="settings_backup_profile_replace_description">যে অংশগুলো পুনরুদ্ধার হচ্ছে, তার জন্য এখানের ফেভারিট, দেখার ইতিহাস, চালিয়ে যাওয়ার অবস্থান, কাস্টমাইজেশন ও নিজের সাজানো ক্রম আগে মুছে ফেলা হয়।</string>
+    <string name="settings_backup_profile_keep_both">দুটোই রাখুন</string>
+    <string name="settings_backup_profile_keep_both_description">ব্যাকআপের প্রোফাইল নতুন প্রোফাইল হিসেবে আসবে: “<xliff:g id="name">%1$s</xliff:g>”।</string>
+    <string name="settings_backup_profile_restored_name"><xliff:g id="name">%1$s</xliff:g> (পুনরুদ্ধার করা)</string>
     <string name="settings_metadata_optional">ঐচ্ছিক</string>
     <string name="settings_metadata_test_title">Oppenheimer</string>
     <string name="settings_bulk_rename_title">একসঙ্গে নাম পরিবর্তন</string>
@@ -1213,6 +1249,32 @@
     <string name="local_sync_last_synced">শেষ সিঙ্ক: <xliff:g id="when">%1$s</xliff:g></string>
     <string name="local_sync_already_paired">ইতিমধ্যে যুক্ত</string>
     <string name="local_sync_device_with_code"><xliff:g id="name">%1$s</xliff:g> (<xliff:g id="code">%2$s</xliff:g>)</string>
+    <string name="local_sync_profile_note">শুধু ব্যবহৃত প্রোফাইলটি সিঙ্ক হয়: এখানে <xliff:g id="profile">%1$s</xliff:g>, অন্য ডিভাইসে ব্যবহৃত প্রোফাইলের সঙ্গে।</string>
+    <string name="local_auto_sync_title">অটো-সিঙ্ক</string>
+    <string name="local_auto_sync_for_device">এই ডিভাইস <xliff:g id="device">%1$s</xliff:g>-এর সঙ্গে নিজে থেকে কী সিঙ্ক করে, আর কত ঘন ঘন।</string>
+    <string name="local_auto_sync_enable">এই ডিভাইসের সঙ্গে অটো-সিঙ্ক</string>
+    <string name="local_auto_sync_enable_hint">অন্য ডিভাইসেও লোকাল সিঙ্ক খুলুন: সেখানে অনুমতি চাওয়া হবে।</string>
+    <string name="local_auto_sync_waiting"><xliff:g id="device">%1$s</xliff:g>-এর অনুমতির অপেক্ষায়…</string>
+    <string name="local_auto_sync_declined"><xliff:g id="device">%1$s</xliff:g> অটো-সিঙ্কের অনুমতি দেয়নি।</string>
+    <string name="local_auto_sync_accept_title">অটো-সিঙ্কের অনুমতি দেবেন?</string>
+    <string name="local_auto_sync_accept_body">দুটোতেই OwnTV খোলা থাকলে <xliff:g id="device">%1$s</xliff:g> এই ডিভাইসের সঙ্গে নিজে থেকে সিঙ্ক করতে চায়। এই ডিভাইসে আপনি যা অনুমতি দেবেন শুধু সেটুকুই আসবে, আর যেকোনো ডিভাইস এটি বন্ধ করতে পারে।</string>
+    <string name="local_auto_sync_accept">অনুমতি দিন</string>
+    <string name="local_auto_sync_decline">অনুমতি দেবেন না</string>
+    <string name="local_auto_sync_what_to_sync">এই ডিভাইস কী সিঙ্ক করে</string>
+    <string name="local_auto_sync_when">কত ঘন ঘন</string>
+    <string name="local_auto_sync_timing_immediately">যেকোনো অ্যাপ খোলা বা বন্ধ হওয়ার সময়</string>
+    <string name="local_auto_sync_timing_daily">প্রতিদিন</string>
+    <string name="local_auto_sync_timing_weekly">প্রতি সপ্তাহে</string>
+    <string name="local_auto_sync_note">অটো-সিঙ্ক দুই দিকেই মেলায়, আর মুছে ফেলা জিনিস মোছাই থাকে। প্রতিটি ডিভাইস ঠিক করে কী ঢুকতে দেবে: লগইনসহ প্লেলিস্ট আর সেটিংস শুধু সেখানেই যায় যেখানে টিক দেওয়া আছে।</string>
+    <string name="local_auto_sync_last_run">শেষ অটো-সিঙ্ক: <xliff:g id="when">%1$s</xliff:g></string>
+    <string name="local_auto_sync_their_sections"><xliff:g id="device">%1$s</xliff:g> সিঙ্ক করে: <xliff:g id="sections">%2$s</xliff:g></string>
+    <string name="local_auto_sync_profiles">প্রোফাইল: <xliff:g id="here">%1$s</xliff:g> ↔ <xliff:g id="there">%2$s</xliff:g></string>
+    <string name="local_auto_sync_profile_hint">এই প্রোফাইল, <xliff:g id="profile">%1$s</xliff:g>, <xliff:g id="device">%2$s</xliff:g>-এ ব্যবহৃত প্রোফাইলের সঙ্গে জোড়া দেয়।</string>
+    <string name="local_auto_sync_turned_off"><xliff:g id="device">%1$s</xliff:g>-এ অটো-সিঙ্ক বন্ধ করা হয়েছে</string>
+    <string name="local_auto_sync_unreachable"><xliff:g id="device">%1$s</xliff:g>-এ পৌঁছানো যায়নি, আবার চেষ্টা করা হবে</string>
+    <string name="local_auto_sync_listen">অটো-সিঙ্কের জন্য শুনতে থাকুন</string>
+    <string name="local_auto_sync_listen_description">চালু: এখানে OwnTV খোলা থাকলেই পেয়ার করা ডিভাইস এর সঙ্গে সিঙ্ক করতে পারে। বন্ধ: শুধু সিঙ্ক মোড চালু থাকার সময়।</string>
+    <string name="local_auto_sync_listening">শুনছে</string>
     <string name="more_pane_last_backup">সর্বশেষ ব্যাকআপ</string>
     <string name="more_pane_encrypted">এনক্রিপ্ট করা</string>
     <string name="more_group_your_things">আপনার জিনিস</string>
@@ -1398,7 +1460,7 @@
     <string name="settings_line_guide_width">চ্যানেল তালিকা ও টাইমলাইন</string>
     <string name="settings_line_browsing">শেষ বিভাগ ও আইটেম মনে রাখুন</string>
     <string name="settings_line_home">সারি বেছে নিন, সাজান ও ফিল্টার করুন</string>
-    <string name="settings_line_content_menus">প্রতিটি মেনুর কাজগুলো নতুন করে সাজান</string>
+    <string name="settings_line_content_menus">প্রতিটি মেনুর কাজগুলো সাজান বা লুকান</string>
     <string name="settings_line_remote_shortcuts">রিমোটের অব্যবহৃত বোতাম নির্ধারণ করুন</string>
     <string name="settings_line_customize">লুকান ও দেখান, নাম বদলান ও সাজান</string>
     <string name="settings_line_metadata">মুভি ও সিরিজের পোস্টার, কাহিনি, অভিনেতা ও রেটিং</string>
@@ -1411,6 +1473,7 @@
     <string name="settings_line_dns">একটি নিজস্ব DNS সার্ভার</string>
     <string name="settings_line_quick_live_preview">লাইভ টিভিতে ফোকাস করা চ্যানেল চালান</string>
     <string name="settings_line_preview_sound">লাইভ প্রিভিউতে শব্দ</string>
+    <string name="settings_line_preview_on_ok">আগে প্রিভিউ, তারপর ফুল স্ক্রিন</string>
     <string name="settings_line_quick_channel_numbers">চ্যানেলে যেতে রিমোটে নম্বর টিপুন</string>
     <string name="settings_line_prefer_sdr">স্ট্রিমে দুটোই থাকলে SDR</string>
     <string name="settings_line_quick_autoplay">পরের পর্ব নিজে থেকে শুরু করুন</string>
@@ -1491,6 +1554,8 @@
     <string name="settings_help_startup">OwnTV চালু হলে কী দেখাবে: হোম, শেষ দেখা চ্যানেল, আপনার প্রিয়, অথবা আপনার বাছাই করা চ্যানেল।</string>
     <string name="settings_help_check_updates">এখনই GitHub-এ নতুন OwnTV খোঁজে এবং ইনস্টল করার প্রস্তাব দেয়। আপনার প্লেলিস্ট, প্রিয় ও সেটিংস যেমন আছে তেমনই থাকে।</string>
     <string name="settings_help_update_startup">প্রতিবার OwnTV চালু হলে নতুন সংস্করণ খোঁজে এবং থাকলে জানায়। জিজ্ঞাসা না করে কিছু ইনস্টল হয় না।</string>
+    <string name="settings_help_auto_start_boot">টিভি চালু হওয়ার পর OwnTV নিজে থেকে খোলে, অ্যাপ চালুর সময় সেটিংয়ে বেছে নেওয়া স্ক্রিনে। Android কোনো অ্যাপকে নিজে থেকে খুলতে দেয় শুধু তখনই, যখন সেটি অন্য অ্যাপের উপরে দেখাতে পারে, তাই এটি চালু করলে সেই অনুমতির স্ক্রিন খোলে। কিছু টিভিতে এই অনুমতি নেই, সেখানে নিজে থেকে চালু হওয়া কাজ করতে পারে না।</string>
+    <string name="settings_help_auto_start_wake">প্রতিবার টিভি স্লিপ থেকে জেগে উঠলে OwnTV খোলে, এমনকি অন্য কোনো অ্যাপের জন্য জাগালেও। অ্যাপ চালুর সময় সেটিং যদি কোনো চ্যানেল খোলে, তাহলে প্রতিবার জাগলে সেই স্ট্রিম শুরু হয়। এটি চালু থাকলে OwnTV একটি নিঃশব্দ বিজ্ঞপ্তিসহ ছোট একটি ব্যাকগ্রাউন্ড পরিষেবা চালু রাখে। চালু হলে নিজে থেকে খোলার মতোই, এর জন্যও অন্য অ্যাপের উপরে দেখানোর অনুমতি লাগে।</string>
     <string name="settings_help_dns">আপনার নেটওয়ার্কের নিজস্ব DNS-এর বদলে আপনার বাছাই করা DNS সার্ভার দিয়ে প্রোভাইডারের ঠিকানা খোঁজে — নেটওয়ার্ক সেগুলো আটকালে বা ঘুরিয়ে দিলে কাজে লাগে।</string>
     <string name="settings_help_live_engine">ExoPlayer অনেক দ্রুত চ্যানেল খোলে এবং একমাত্র এটিতেই লাইভ সাবটাইটেল আছে। ExoPlayer যা পারে না এমন চ্যানেল mpv চালায়, কিছু অস্বাভাবিক অডিওসহ। মিলিত বিকল্পগুলো প্রথমটি ব্যর্থ হলে অন্যটি চেষ্টা করে।</string>
     <string name="settings_help_hw">টিভির হার্ডওয়্যার ডিকোডার ব্যবহার করে: মসৃণ 4K আর কম গরম। কিছু স্ট্রিম আটকে গেলে বা ব্লক দেখালে তবেই বন্ধ করুন; তখন সফটওয়্যার ডিকোডার কাজ করে।</string>
@@ -1501,6 +1566,7 @@
     <string name="settings_help_sub_lang">স্ট্রিমে থাকলে এই ভাষার সাবটাইটেল নিজে থেকে চালু হয়। না থাকলে প্লেয়ারে ট্র্যাক না বাছা পর্যন্ত সাবটাইটেল বন্ধ থাকে।</string>
     <string name="settings_help_live_preview">ফোকাস করা চ্যানেল লাইভ টিভি তালিকার পাশের প্রিভিউতে চলে, তাই খোলার আগেই দেখতে পান কী চলছে। প্রিভিউয়ের জায়গা আছে এমন লেআউট দরকার।</string>
     <string name="settings_help_preview_audio">প্রিভিউয়ের ছবির সঙ্গে শব্দও চালায়। বন্ধ থাকলে ব্রাউজ করা নিঃশব্দ থাকে।</string>
+    <string name="settings_help_preview_on_ok">বেছে নিন কোথায় কোনো চ্যানেলে OK চাপলে সেটি আগে প্রিভিউতে চলবে এবং একই চ্যানেলে আবার OK চাপলে ফুল স্ক্রিনে খুলবে। লাইভ টিভিতে তখন ব্রাউজ করার সময় প্রিভিউ সেই চ্যানেলেই থাকে। যেখানে এটি বন্ধ, সেখানে OK চ্যানেলটি সঙ্গে সঙ্গে ফুল স্ক্রিনে খোলে এবং প্রিভিউ নির্বাচনের সঙ্গে চলে।</string>
     <string name="settings_help_timeshift_window">ক্যাচ-আপ ছাড়া চ্যানেলে লাইভ টিভি থামানো ও পেছানো কতটা পেছনে যেতে পারে। বেশি হলে চ্যানেলের বেশি অংশ এই ডিভাইসের স্টোরেজে থাকে।</string>
     <string name="settings_help_resume">মুভি বা পর্বের সংরক্ষিত অবস্থান থাকলে \'জিজ্ঞাসা করুন\' আবার শুরু বা গোড়া থেকে বেছে নিতে দেয়। \'সবসময়\' থামা জায়গা থেকে চালায়; \'কখনো না\' শুরু থেকে চালায়।</string>
     <string name="settings_help_mini">ছোট প্লেয়ার, যা ব্রাউজ করার সময় কোণায় চ্যানেল চালু রাখে। এর আকার ও কোন কোণে থাকবে বেছে নিন।</string>
@@ -1587,6 +1653,8 @@
     <string name="settings_remote_scan">স্ক্যান করুন বা ব্রাউজারে খুলুন</string>
     <string name="settings_remote_or_open">অথবা খুলুন</string>
     <string name="settings_remote_details_note">বিবরণ এখানে দেখাবে; ইমপোর্ট আপনি রিমোট দিয়ে শুরু করবেন।</string>
+    <string name="settings_remote_edit_note">পরিবর্তনগুলো সম্পাদনা স্ক্রিন ভরে দেয়; সংরক্ষণ করুন আপনি রিমোট দিয়ে চাপবেন।</string>
+    <string name="settings_help_edit_from_phone">একই Wi-Fi-তে থাকা কোনো ফোন, ট্যাবলেট বা কম্পিউটারের ব্রাউজারে এই প্লেলিস্ট খোলে। পাসওয়ার্ড, MAC ঠিকানা ও M3U প্লেলিস্টের ঠিকানা সেখানে কখনো দেখানো হয় না: রাখতে চাইলে খালি রাখুন। আপনি যা পাঠান তা এই স্ক্রিন ভরে দেয়, আর সংরক্ষণ করুন চাপার আগে কিছুই বদলায় না।</string>
     <string name="settings_key_stop_back">থামান ও ফিরে যান</string>
     <string name="settings_source_type">ধরন</string>
     <string name="settings_line_source_type">Xtream, M3U বা Stalker পোর্টাল</string>

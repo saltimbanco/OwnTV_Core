@@ -73,9 +73,9 @@
     <string name="settings_port">Port</string>
     <!-- Translators: Placeholder example in the proxy port field. -->
     <string name="settings_proxy_port_hint">8080</string>
-    <!-- Translators: Text-field label for an optional proxy username. -->
+    <!-- Translators: Text-field label for an optional username — a proxy's, or a Stalker portal's login on top of the MAC address. -->
     <string name="settings_username_optional">Username (optional)</string>
-    <!-- Translators: Text-field label for an optional proxy password. -->
+    <!-- Translators: Text-field label for an optional password — a proxy's, or a Stalker portal's login on top of the MAC address. -->
     <string name="settings_password_optional">Password (optional)</string>
     <!-- Translators: Button to test the proxy connection. -->
     <string name="settings_test_proxy">Test proxy</string>
@@ -421,9 +421,11 @@
     <!-- Translators: Settings navigation label for the long-press content menus. -->
     <string name="settings_content_menus_title">Long-press menus</string>
     <!-- Translators: Description of the long-press content menus settings. -->
-    <string name="settings_content_menus_description">Rearrange the actions in the channel, movie, series &amp; episode menus</string>
-    <!-- Translators: Hint shown above the list when arranging a long-press menu. -->
-    <string name="settings_content_menus_hint">Hold OK on an action to pick it up, then Up and Down to move it. Press OK again to drop it.</string>
+    <string name="settings_content_menus_description">Rearrange or hide the actions in the channel, movie, series &amp; episode menus</string>
+    <!-- Translators: Hint shown above the list when arranging a long-press menu with the remote: OK shows or hides an action, a held OK picks it up to move it. -->
+    <string name="settings_content_menus_hint">Press OK on an action to show or hide it. Hold OK to pick it up, then Up and Down to move it; press OK again to drop it.</string>
+    <!-- Translators: Note on the long-press menus settings: some actions in the list are only offered in some places (Catch-up only on catch-up channels, Remove from history only in History). -->
+    <string name="settings_content_menus_note">Some actions appear only where they apply.</string>
     <!-- Translators: Settings navigation label for Browsing & lists. -->
     <string name="settings_browsing_lists">Browsing &amp; lists</string>
     <!-- Translators: Description of the Browsing & lists settings. -->
@@ -512,6 +514,10 @@
     <string name="settings_preview_audio">Preview audio</string>
     <!-- Translators: Description of the preview sound setting. -->
     <string name="settings_preview_audio_description">Play sound in the Live preview</string>
+    <!-- Translators: Setting label: OK on a channel first plays it in the small preview, OK again opens it full screen. -->
+    <string name="settings_preview_on_ok">OK previews first</string>
+    <!-- Translators: Description of the OK previews first setting; also the body of its popup with one switch per screen. -->
+    <string name="settings_preview_on_ok_description">OK plays the channel in the preview, OK again opens it full screen</string>
     <!-- Translators: Settings navigation label for Mini-player settings. -->
     <string name="settings_mini_player_root">Mini-player</string>
     <!-- Translators: Description of the Mini-player settings group. -->
@@ -522,10 +528,14 @@
     <string name="settings_pip_on_leave">Picture-in-picture when leaving the app</string>
     <!-- Translators: Description of the picture-in-picture setting. -->
     <string name="settings_pip_on_leave_description">Keep the video playing in a small window when you press Home</string>
-    <!-- Translators: Setting label for auto frame rate matching. -->
-    <string name="settings_auto_frame_rate">Auto frame rate</string>
-    <!-- Translators: Description of the auto frame rate setting. Explains when to turn it off. -->
-    <string name="settings_auto_frame_rate_description">Match the TV\'s refresh rate to the video (24/25/50/60 fps) in full screen, for Live TV and VOD, and restore it on exit. Turn off if your TV or receiver re-handshakes HDMI noisily on every channel change.</string>
+    <!-- Translators: Setting label: auto frame rate matching for films and episodes. -->
+    <string name="settings_auto_frame_rate_films">Auto frame rate for films and series</string>
+    <!-- Translators: Description of settings_auto_frame_rate_films. -->
+    <string name="settings_auto_frame_rate_films_description">Match the TV\'s refresh rate to the film or episode (24/25/50/60 fps) in full screen, and restore it on exit.</string>
+    <!-- Translators: Setting label: auto frame rate matching for live channels. -->
+    <string name="settings_auto_frame_rate_live">Auto frame rate for Live TV</string>
+    <!-- Translators: Description of settings_auto_frame_rate_live. Explains when to turn it off. -->
+    <string name="settings_auto_frame_rate_live_description">Match the TV\'s refresh rate to the channel (25/50/60 fps) in full screen, and restore it on exit. Turn off if your TV or receiver re-handshakes HDMI noisily on every channel change.</string>
     <!-- Translators: TV setting under Auto frame rate. How long a film pauses while the TV switches display mode. -->
     <string name="settings_afr_pause">Pause during the display switch</string>
     <!-- Translators: Description of settings_afr_pause. "Re-sync" = the HDMI handshake that blacks the screen for a moment. -->
@@ -621,6 +631,16 @@
     <string name="settings_update_startup">Check updates on startup</string>
     <!-- Translators: Description of the auto-update-check setting. -->
     <string name="settings_update_startup_description">Look for a new version when the app opens</string>
+    <!-- Translators: Toggle label: open the app by itself after the TV device has started up (booted). -->
+    <string name="settings_auto_start_boot">Auto start on boot</string>
+    <!-- Translators: Description of the auto-start-on-boot toggle. OwnTV is a brand name. -->
+    <string name="settings_auto_start_boot_description">Open OwnTV when the TV is switched on</string>
+    <!-- Translators: Toggle label: open the app by itself each time the TV wakes up from sleep (standby). -->
+    <string name="settings_auto_start_wake">Auto start on wake-up</string>
+    <!-- Translators: Description of the auto-start-on-wake-up toggle. OwnTV is a brand name. -->
+    <string name="settings_auto_start_wake_description">Open OwnTV when the TV wakes from sleep</string>
+    <!-- Translators: Shown under an auto-start toggle that is on but cannot work yet, because Android has not allowed the app to display over other apps. Use the wording of the Android permission screen. -->
+    <string name="settings_auto_start_needs_overlay">Needs “Display over other apps”</string>
     <!-- Translators: Settings navigation label for the About screen. -->
     <string name="settings_about">About</string>
     <!-- Translators: Setting label for the live stream latency setting. -->
@@ -839,6 +859,8 @@
     <string name="settings_search_keywords_updates">github release version</string>
     <!-- Translators: Hidden keyword bag for the auto-update check settings. Translate as individual search terms. -->
     <string name="settings_search_keywords_update_auto">auto update new version</string>
+    <!-- Translators: Hidden keyword bag for the auto-start settings. Translate as individual search terms. -->
+    <string name="settings_search_keywords_auto_start">boot power on wake sleep standby launch automatically</string>
     <!-- Translators: Language option to use the default (English) language. -->
     <string name="settings_language_default">Default (English)</string>
     <!-- Translators: Language option to follow the device language. -->
@@ -1250,10 +1272,20 @@
     <string name="settings_browsing_last_category">Remember last category</string>
     <!-- Translators: Description of the remember-last-category setting. -->
     <string name="settings_browsing_last_category_description">Reopen the section on the category you left, not All.</string>
+    <!-- Translators: Settings › Browsing & lists, switch title under "Remember last category". On, the TV Guide opens on the category Live TV remembers instead of keeping one of its own. Use the same names as the TV Guide and Live TV menu entries. -->
+    <string name="settings_guide_follows_live">TV Guide follows Live TV</string>
+    <!-- Translators: Short line under settings_guide_follows_live. -->
+    <string name="settings_guide_follows_live_description">Open the TV Guide on Live TV\'s category.</string>
+    <!-- Translators: Explanation shown in the panel beside the Settings rows while settings_guide_follows_live has focus. -->
+    <string name="settings_help_guide_follows_live">On: the TV Guide opens on the category Live TV remembers, and a category you pick in the TV Guide becomes Live TV\'s too. Off: the TV Guide keeps a category of its own.</string>
     <!-- Translators: Toggle label to remember the last focused item per category. -->
     <string name="settings_browsing_last_item">Remember last item</string>
     <!-- Translators: Description of the remember-last-item setting. -->
     <string name="settings_browsing_last_item_description">Each category keeps its own scroll position instead of starting at the top. Live TV also restores the last focused channel.</string>
+    <!-- Translators: Section heading in Browsing & lists for showing or hiding the built-in Live TV categories (Catch-up, All channels). -->
+    <string name="settings_browsing_live_categories">Live TV categories</string>
+    <!-- Translators: Help text under the Live TV categories switches (Catch-up, All channels). "All channels" and "Favorites" are the names of those two categories. -->
+    <string name="settings_browsing_live_categories_description">Shown in Live TV, the guide, the player and Multiview. With All channels off, Live TV opens on your first category, or Favorites if you have none.</string>
     <!-- Translators: Setting label for the catch-up player preference. -->
     <string name="settings_catchup_player">Play catch-up in</string>
 
@@ -1266,16 +1298,36 @@
     <string name="settings_customize_wrong_pin">Wrong PIN — try again</string>
     <!-- Translators: Heading on the Customize PIN entry screen. -->
     <string name="settings_customize_enter_pin">Enter PIN</string>
-    <!-- Translators: Button to set a PIN on the Customize screen. The lock emoji is part of the display. -->
-    <string name="settings_customize_set_pin">🔒 Set PIN</string>
-    <!-- Translators: Button to change the PIN on the Customize screen. The lock emoji is part of the display. -->
-    <string name="settings_customize_change_pin">🔒 Change PIN</string>
+    <!-- Translators: Customize screen menu entry: set the PIN that opens locked categories. The lock emoji is part of the display. -->
+    <string name="settings_customize_set_pin">🔒 Set category lock PIN</string>
+    <!-- Translators: Customize screen menu entry: change the PIN that opens locked categories. The lock emoji is part of the display. -->
+    <string name="settings_customize_change_pin">🔒 Change category lock PIN</string>
+    <!-- Translators: Customize screen menu entry: remove the PIN that opens locked categories (every category lock goes with it). -->
+    <string name="settings_customize_remove_pin">Remove category lock PIN</string>
     <!-- Translators: Button to remove the PIN lock from the Customize screen. -->
     <string name="settings_customize_remove_lock">Remove lock</string>
-    <!-- Translators: Name of the option, in the Customize screen menu, that makes opening Settings ask for the Customize PIN. Also a Settings search result. -->
-    <string name="settings_customize_settings_pin">Ask for PIN to open Settings</string>
-    <!-- Translators: The same option as a Customize menu entry showing its state. "state" is On or Off. -->
-    <string name="settings_customize_settings_pin_button">Ask for PIN to open Settings: <xliff:g id="state">%1$s</xliff:g></string>
+    <!-- Translators: Settings › App row: a PIN of its own that Settings, Backup & Restore and Local sync ask for. Also the popup title. -->
+    <string name="settings_lock">Settings lock</string>
+    <!-- Translators: Description under the Settings lock row and in its popup. -->
+    <string name="settings_lock_description">Settings, Backup &amp; Restore and Local sync ask for a PIN of their own. Each profile sets its own.</string>
+    <!-- Translators: Short line for the Settings lock row on the TV. -->
+    <string name="settings_line_settings_lock">A PIN of its own for Settings</string>
+    <!-- Translators: Help panel text for the Settings lock row. -->
+    <string name="settings_help_settings_lock">A PIN for this profile that Settings, Backup &amp; Restore and Local sync ask for before they open. It is neither the profile PIN nor the category lock PIN: each lock has its own PIN, and none of them opens another. Change PIN and Turn off ask for the current Settings PIN.</string>
+    <!-- Translators: Switch shown under the Settings lock while it is on: the long-press menu's organising actions ask for the Settings PIN too. -->
+    <string name="settings_lock_menus">Also lock long-press menu changes</string>
+    <!-- Translators: Description of the switch above. -->
+    <string name="settings_lock_menus_description">Hide, Move, Rename, locking a category and Remove from History ask for the Settings PIN too. Favorites and Play never do.</string>
+    <!-- Translators: Short line for the long-press switch on the TV. -->
+    <string name="settings_line_settings_lock_menus">Long-press changes ask for the Settings PIN</string>
+    <!-- Translators: Help panel text for the long-press switch. -->
+    <string name="settings_help_settings_lock_menus">With this on, the long-press changes (Hide, Move, Rename, Lock category and Remove from History) ask for the Settings PIN first. One right PIN opens them until you leave the app or switch profile. Adding to Favorites and playing never ask.</string>
+    <!-- Translators: Button in the Settings lock popup: set a new Settings PIN (asks for the current one first). -->
+    <string name="settings_lock_change_pin">Change PIN</string>
+    <!-- Translators: Button in the Settings lock popup: turn the Settings lock off (asks for the current PIN first). -->
+    <string name="settings_lock_turn_off">Turn off</string>
+    <!-- Translators: Settings search keywords for the Settings lock, space-separated, lowercase. -->
+    <string name="settings_search_keywords_settings_lock">lock pin password parental settings</string>
     <!-- Translators: Description of the Customize Categories & Items feature. -->
     <string name="settings_customize_description">Hide &amp; unhide channels, movies and series, and rename or reorder categories for this profile. Survives re-syncs.</string>
     <!-- Translators: Setting label for new-category visibility behavior. -->
@@ -1360,10 +1412,8 @@
     <string name="settings_customize_restore_defaults_description">Hidden categories and items show again, renames and custom order are cleared, and moved-out items return. Combined categories, favorites and guide matches are kept.</string>
     <!-- Translators: Hint text in the rename dialog. 'name' is the current category name. -->
     <string name="settings_customize_rename_hint">Only for this profile. Leave blank to restore “<xliff:g id="name">%1$s</xliff:g>”.</string>
-    <!-- Translators: Dialog title for removing the Customize screen PIN lock. -->
-    <string name="settings_customize_remove_pin_title">Remove PIN lock?</string>
-    <!-- Translators: Description of what removing the PIN lock does. -->
-    <string name="settings_customize_remove_pin_message">The Customize screen will open without asking for a PIN again.</string>
+    <!-- Translators: Dialog title for removing the PIN that opens locked categories. -->
+    <string name="settings_customize_remove_pin_title">Remove the category lock PIN?</string>
     <!-- Translators: Second sentence of the remove-PIN confirmation: categories locked from the Live TV, Movies or Series menu lose their lock as well. -->
     <string name="settings_customize_remove_pin_locks">Every category locked with this PIN is unlocked too.</string>
     <!-- Translators: Button to confirm removal. -->
@@ -1464,6 +1514,10 @@
     <string name="settings_sources_clean_names_custom_hint">Words separated by ; e.g. VIP; Backup</string>
     <!-- Translators: Button inside the Info popup: measure the playlist again. -->
     <string name="settings_sources_retest">Re-test</string>
+    <!-- Translators: Button or switch beside Re-test for a playlist: let Multiview and recordings open more streams than the provider's stated limit. -->
+    <string name="settings_sources_ignore_limit">Ignore connection limit</string>
+    <!-- Translators: Line shown while settings_sources_ignore_limit is on. "Multiview" is the feature that plays several channels at once. -->
+    <string name="settings_sources_ignore_limit_on">Connection limit ignored: Multiview and recordings may open more streams than this playlist reports. A stream the provider refuses still says so.</string>
     <!-- Translators: Title of the confirmation shown before the connection measurement runs. -->
     <string name="settings_sources_probe_title">Test this playlist?</string>
     <!-- Translators: Body of that confirmation. It must be clear that playback stops and that it is slow. -->
@@ -1672,8 +1726,6 @@
     <string name="settings_backup_profile_current">“<xliff:g id="name">%1$s</xliff:g>” (current)</string>
     <!-- Translators: Profile label indicating a locked profile. 'name' is the profile name. -->
     <string name="settings_backup_profile_locked">“<xliff:g id="name">%1$s</xliff:g>” is locked</string>
-    <!-- Translators: Text-field label for the profile PIN in backup settings. -->
-    <string name="settings_backup_profile_pin">Profile PIN</string>
     <!-- Translators: Error text when the PIN is incorrect. -->
     <string name="settings_backup_pin_incorrect">PIN incorrect.</string>
     <!-- Translators: Status text when the profile is PIN-locked. -->
@@ -1748,6 +1800,8 @@
     </plurals>
     <!-- Translators: Error text when backup export fails. -->
     <string name="settings_backup_export_error">Export failed.</string>
+    <!-- Translators: Shown instead of the file picker when no app on the phone can save a file (some phones have the system Files app disabled or removed). "Share" is the backup page's Share button. -->
+    <string name="settings_backup_no_file_app">No app on this phone can save the file. Use Share instead.</string>
     <!-- Translators: Error text when the backup file cannot be read. -->
     <string name="settings_backup_read_error">Couldn\'t read the backup file.</string>
     <!-- Translators: Error text when backup import fails. -->
@@ -1760,6 +1814,24 @@
     <string name="settings_backup_selected_profiles">The backup will contain only the selected profiles and their data. Locked profiles need their PIN.</string>
     <!-- Translators: Description explaining why a PIN is needed for locked profiles in backups. -->
     <string name="settings_backup_profile_pin_description">This isn\'t your current profile. Enter its PIN to include it in the backup — without the PIN, its data won\'t be backed up.</string>
+    <!-- Translators: Restore, a profile in the backup has the name of one already on this device. %1$s is the name. -->
+    <string name="settings_backup_profile_clash_title">“<xliff:g id="name">%1$s</xliff:g>” is already on this device</string>
+    <!-- Translators: Under that title. -->
+    <string name="settings_backup_profile_clash_body">The backup has a profile with the same name. What should happen to it?</string>
+    <!-- Translators: Choice: merge the backup's profile into the one already here. -->
+    <string name="settings_backup_profile_merge">Merge into it</string>
+    <!-- Translators: What merging does. -->
+    <string name="settings_backup_profile_merge_description">Keeps what it has here and adds what the backup brings.</string>
+    <!-- Translators: Choice: clear the profile here, then restore the backup's. -->
+    <string name="settings_backup_profile_replace">Replace it</string>
+    <!-- Translators: What replacing does. -->
+    <string name="settings_backup_profile_replace_description">Its favorites, watch history, resume positions, customizations and manual order here are cleared first, for the parts being restored.</string>
+    <!-- Translators: Choice: keep the profile here and add the backup's as a new profile. -->
+    <string name="settings_backup_profile_keep_both">Keep both</string>
+    <!-- Translators: What keeping both does. %1$s is the new profile's name. -->
+    <string name="settings_backup_profile_keep_both_description">The backup\'s profile comes in as a new profile, “<xliff:g id="name">%1$s</xliff:g>”.</string>
+    <!-- Translators: Name of a restored profile kept beside one with the same name. %1$s is the original name. -->
+    <string name="settings_backup_profile_restored_name"><xliff:g id="name">%1$s</xliff:g> (restored)</string>
 
     <!-- Translators: Label for an optional field. Lowercase is intentional. -->
     <string name="settings_metadata_optional">optional</string>
@@ -2287,6 +2359,59 @@
     <string name="local_sync_already_paired">Already paired</string>
     <!-- Translators: A device name followed by a short code, used only when two paired devices are the same model and share a name. %1$s is the device name, %2$s a four-character code. -->
     <string name="local_sync_device_with_code"><xliff:g id="name">%1$s</xliff:g> (<xliff:g id="code">%2$s</xliff:g>)</string>
+    <!-- Translators: Local sync, before a sync starts: only the profile in use is synced. %1$s is its name. -->
+    <string name="local_sync_profile_note">Only the profile in use syncs: <xliff:g id="profile">%1$s</xliff:g> here, with the profile in use on the other device.</string>
+    <!-- Auto-sync: two paired devices syncing by themselves while OwnTV is open on both. -->
+    <!-- Translators: Name of the feature, and of the button on a paired device's row in Local sync that opens its settings. -->
+    <string name="local_auto_sync_title">Auto-sync</string>
+    <!-- Translators: Line under the title of one paired device's Auto-sync settings. -->
+    <string name="local_auto_sync_for_device">What this device syncs with <xliff:g id="device">%1$s</xliff:g> by itself, and how often.</string>
+    <!-- Translators: The switch that turns auto-sync with one paired device on or off. -->
+    <string name="local_auto_sync_enable">Auto-sync with this device</string>
+    <!-- Translators: Under the switch while it is off: what turning it on needs. -->
+    <string name="local_auto_sync_enable_hint">Open Local sync on the other device too: it is asked to allow it.</string>
+    <!-- Translators: Under the switch while the other device is being asked. -->
+    <string name="local_auto_sync_waiting">Waiting for <xliff:g id="device">%1$s</xliff:g> to allow…</string>
+    <!-- Translators: The other device said no, or nobody answered. -->
+    <string name="local_auto_sync_declined"><xliff:g id="device">%1$s</xliff:g> didn\'t allow auto-sync.</string>
+    <!-- Translators: Title of the question on the other device. -->
+    <string name="local_auto_sync_accept_title">Allow auto-sync?</string>
+    <!-- Translators: The question on the other device. %1$s is the asking device's name. -->
+    <string name="local_auto_sync_accept_body"><xliff:g id="device">%1$s</xliff:g> wants to sync with this device by itself whenever OwnTV is open on both. Only what you allow on this device comes in, and either device can turn it off.</string>
+    <!-- Translators: Button that allows it. -->
+    <string name="local_auto_sync_accept">Allow</string>
+    <!-- Translators: Button that refuses it; focused by default. -->
+    <string name="local_auto_sync_decline">Don\'t allow</string>
+    <!-- Translators: Heading over the sections this device lets travel. -->
+    <string name="local_auto_sync_what_to_sync">What this device syncs</string>
+    <!-- Translators: Heading over the timing choices: the least time between two automatic syncs. -->
+    <string name="local_auto_sync_when">How often</string>
+    <!-- Translators: Timing choice: every time either device opens or leaves OwnTV. -->
+    <string name="local_auto_sync_timing_immediately">Each time either app opens or closes</string>
+    <!-- Translators: Timing choice: at most once a day. -->
+    <string name="local_auto_sync_timing_daily">Daily</string>
+    <!-- Translators: Timing choice: at most once a week. -->
+    <string name="local_auto_sync_timing_weekly">Weekly</string>
+    <!-- Translators: Note at the bottom of one device's Auto-sync settings. -->
+    <string name="local_auto_sync_note">Auto-sync merges both ways, and deletions stay deleted. Each device decides what it lets through: playlists with their logins and Settings travel only where they are ticked.</string>
+    <!-- Translators: Line under a paired device's row: when the last automatic sync with it completed. %1$s is a relative time such as “2 hours ago”. -->
+    <string name="local_auto_sync_last_run">Last auto-sync: <xliff:g id="when">%1$s</xliff:g></string>
+    <!-- Translators: What the other device lets travel. %1$s is its name, %2$s a list of sections. -->
+    <string name="local_auto_sync_their_sections"><xliff:g id="device">%1$s</xliff:g> syncs: <xliff:g id="sections">%2$s</xliff:g></string>
+    <!-- Translators: The two profiles an auto-sync keeps as one: this device's, then the other device's. -->
+    <string name="local_auto_sync_profiles">Profiles: <xliff:g id="here">%1$s</xliff:g> ↔ <xliff:g id="there">%2$s</xliff:g></string>
+    <!-- Translators: In an auto-sync's settings before it is on. %1$s is the profile in use here, %2$s the other device. -->
+    <string name="local_auto_sync_profile_hint">Pairs this profile, <xliff:g id="profile">%1$s</xliff:g>, with the profile in use on <xliff:g id="device">%2$s</xliff:g>.</string>
+    <!-- Translators: Line under a paired device's row: the other device turned auto-sync off. -->
+    <string name="local_auto_sync_turned_off">Auto-sync turned off on <xliff:g id="device">%1$s</xliff:g></string>
+    <!-- Translators: Line under a paired device's row: the last automatic sync could not reach it. -->
+    <string name="local_auto_sync_unreachable">Couldn\'t reach <xliff:g id="device">%1$s</xliff:g>, will try again</string>
+    <!-- Translators: Switch on the Local sync page: whether the auto-sync listener runs while OwnTV is open, not only in Sync mode. -->
+    <string name="local_auto_sync_listen">Keep auto-sync listening</string>
+    <!-- Translators: Description of that switch: the trade-off in one line. -->
+    <string name="local_auto_sync_listen_description">On: paired devices can auto-sync with this one whenever OwnTV is open here. Off: only while Sync mode is on.</string>
+    <!-- Translators: State of that switch's listener: it is running now. -->
+    <string name="local_auto_sync_listening">Listening</string>
     <!-- Translators: Label for the date of the most recent backup, in the More screen's Backup preview pane. -->
     <string name="more_pane_last_backup">Last backup</string>
     <!-- Translators: Shown beside a backup file size when that backup is password-encrypted. -->
@@ -2637,7 +2762,7 @@
     <!-- Translators: One-line description under a setting's name on a Settings page; keep it short, it is cut to one line. -->
     <string name="settings_line_home">Choose, reorder and filter the rows</string>
     <!-- Translators: One-line description under a setting's name on a Settings page; keep it short, it is cut to one line. -->
-    <string name="settings_line_content_menus">Rearrange the actions in each menu</string>
+    <string name="settings_line_content_menus">Rearrange or hide the actions in each menu</string>
     <!-- Translators: One-line description under a setting's name on a Settings page; keep it short, it is cut to one line. -->
     <string name="settings_line_remote_shortcuts">Assign spare remote buttons</string>
     <!-- Translators: One-line description under a setting's name on a Settings page; keep it short, it is cut to one line. -->
@@ -2662,6 +2787,8 @@
     <string name="settings_line_quick_live_preview">Play the focused channel in Live TV</string>
     <!-- Translators: One-line description under a setting's name on a Settings page; keep it short, it is cut to one line. -->
     <string name="settings_line_preview_sound">Sound in the Live preview</string>
+    <!-- Translators: One-line description under a setting's name on a Settings page; keep it short, it is cut to one line. -->
+    <string name="settings_line_preview_on_ok">Preview first, then full screen</string>
     <!-- Translators: One-line description under a setting's name on a Settings page; keep it short, it is cut to one line. -->
     <string name="settings_line_quick_channel_numbers">Type a number on the remote to tune</string>
     <!-- Translators: One-line description under the Prefer SDR setting's name; keep it short, it is cut to one line. -->
@@ -2822,6 +2949,10 @@
     <string name="settings_help_check_updates">Looks on GitHub for a newer OwnTV now and offers to install it. Your playlists, favorites and settings stay as they are.</string>
     <!-- Translators: Explanation shown in the panel beside the Settings rows while this setting has focus. -->
     <string name="settings_help_update_startup">Looks for a new version each time OwnTV starts and tells you when there is one. Nothing is installed without asking.</string>
+    <!-- Translators: Explanation shown in the panel beside the Settings rows while this setting has focus. OwnTV is a brand name; App startup is the name of another setting. -->
+    <string name="settings_help_auto_start_boot">Opens OwnTV by itself once the TV has started up, on the screen chosen in App startup. Android lets an app open by itself only when it may display over other apps, so turning this on opens that permission’s screen. Some TVs do not offer it, and then auto start cannot work there.</string>
+    <!-- Translators: Explanation shown in the panel beside the Settings rows while this setting has focus. OwnTV is a brand name; App startup is the name of another setting. "Stream" is the live channel the app starts playing. -->
+    <string name="settings_help_auto_start_wake">Opens OwnTV each time the TV wakes from sleep, also when you woke it for another app. If App startup opens a channel, every wake-up starts that stream. While this is on, OwnTV keeps a small background service with a silent notification. Like auto start on boot, it needs permission to display over other apps.</string>
     <!-- Translators: Explanation shown in the panel beside the Settings rows while this setting has focus. -->
     <string name="settings_help_dns">Looks up your provider’s addresses with a DNS server of your choice instead of your network’s own — useful when your network blocks or redirects them.</string>
     <!-- Translators: Explanation shown in the panel beside the Settings rows while this setting has focus. -->
@@ -2842,6 +2973,8 @@
     <string name="settings_help_live_preview">The focused channel plays in the preview beside the Live TV list, so you see what is on before you open it. Needs a layout with room for the preview.</string>
     <!-- Translators: Explanation shown in the panel beside the Settings rows while this setting has focus. -->
     <string name="settings_help_preview_audio">Plays the preview’s sound as well as its picture. Off keeps browsing quiet.</string>
+    <!-- Translators: Explanation shown in the panel beside the Settings rows while this setting has focus. -->
+    <string name="settings_help_preview_on_ok">Pick where OK on a channel first plays it in the preview, and OK on the same channel again opens it full screen. In Live TV the preview then stays on that channel while you browse. Where it is off, OK opens the channel full screen at once and the preview follows the highlight.</string>
     <!-- Translators: Explanation shown in the panel beside the Settings rows while this setting has focus. -->
     <string name="settings_help_timeshift_window">How far back Pause and rewind live TV can go on a channel without catch-up. Longer keeps more of the channel in this device’s storage.</string>
     <!-- Translators: Explanation shown in the panel beside the Settings rows while this setting has focus. -->
@@ -2996,6 +3129,10 @@
     <string name="settings_remote_or_open">or open</string>
     <!-- Translators: Panel note on From your phone. Start import is the button on the next page. -->
     <string name="settings_remote_details_note">The details appear here; you press Start import with the remote.</string>
+    <!-- Translators: Note on the TV's Remote page while a playlist is being edited from another device. Save is the button on the edit screen. -->
+    <string name="settings_remote_edit_note">The changes fill the edit screen; you press Save with the remote.</string>
+    <!-- Translators: Explanation shown in the panel beside the Settings rows while "Edit from another device" has focus. -->
+    <string name="settings_help_edit_from_phone">Opens this playlist in a browser on a phone, tablet or computer on the same Wi-Fi. Passwords, MAC addresses and M3U playlist addresses are never shown there: leave them empty to keep them. What you send fills this screen, and nothing changes until you press Save.</string>
     <!-- Translators: Key hint after Back on From your phone: stops the phone server and goes back. -->
     <string name="settings_key_stop_back">Stop and go back</string>
     <!-- Translators: Row on the Add source form: Xtream, M3U or Stalker. -->
