@@ -584,7 +584,7 @@ class XtreamClient(private val http: HttpClient) {
     // with no replacement chars or controls, and re-encodes to the input.
     private fun decodeBase64(s: String): String {
         val t = s.trim()
-        if (t.isEmpty()) return ""
+        if (t.isEmpty()) return t
         val compact = t.filterNot { it == ' ' || it == '\n' || it == '\r' || it == '\t' }
         if (compact.length < 8 || compact.length % 4 != 0) return s
         if (!compact.all { it in 'A'..'Z' || it in 'a'..'z' || it in '0'..'9' || it == '+' || it == '/' || it == '=' }) return s
